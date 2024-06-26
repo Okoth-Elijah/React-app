@@ -3,12 +3,12 @@ import logo from '../assets/images/logo.png'
 
 const register = () => {
   return (
-    <div className="container bg-white" style={{ height: "90vh", borderRadius: "2px" }}>
+    <div className="container bg-white register-container" style={{ height: "90vh", borderRadius: "2px" }}>
       <img src={logo} alt="logo" width={100} height={100} style={{ borderRadius: "50%" }} className='image' />
       <div className="row justify-content-center">
         <div className="col-lg-12">
-          <h2 className="register-title  ">Article Avenue</h2>
-          <form action="" className=" border border-gray border-3 p-3" style={{ width: "500px" }}>
+          <h2 className="register-title  ">Article <span className='text-warning'>Avenue</span> </h2>
+          <form action="" className=" p-3" style={{ width: "500px" }}>
             <div className="form-floating mb-3">
               <input type="text" className="form-control" id="floatingInput" placeholder="Username" required />
               <label htmlFor="floatingInput">UserName</label>
@@ -17,17 +17,17 @@ const register = () => {
               <input type="email" className="form-control" id="floatingInput" placeholder="input-email" required />
               <label htmlFor="floatingInput">Email address</label>
             </div>
-            <div className="form-floating mb-3">
+            {/* <div className="form-floating mb-3">
               <input type="tel" className="form-control" id="floatingInput" placeholder="PhoneNumber" required />
               <label htmlFor="floatingInput">PhoneNumber</label>
-            </div>
+            </div> */}
             <div className="form-row  password-aline">
               <div className="form-floating mb-3 col-sm-6">
                 <input type="Password" className="form-control" id="floatingPassword" placeholder="Password" required />
                 <label htmlFor="floatingInput">Password</label>
               </div>
               <div className="form-floating mb-3 col-sm-6" >
-                <input type="email" className="form-control" id="floatingPassword" placeholder="Password" required />
+                <input type="Password" className="form-control" id="floatingPassword" placeholder="Password" required />
                 <label htmlFor="floatingInput">Confirm-Password</label>
               </div>
             </div>

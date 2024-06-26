@@ -16,9 +16,17 @@ body {
   justify-content: center;
 }
 
+.register-container {
+  box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
+}
+
 .password-aline {
   display: flex;
   gap: 3px;
+}
+
+.image {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.589);
 }
 
 /* Register end */
@@ -31,19 +39,22 @@ body {
   padding: 20px;
 }
 
+.login-container {
+  border: 4px solid gray;
+}
+
 .pass {
   border: 2px solid gray;
   margin-top: 5px;
 }
 
-.btn-primary {
-  display: flex;
-  justify-content: center;
-  margin-left: 47px;
-  width: 200px;
+.login-div {
+  box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
 }
 
-
+.image {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.589);
+}
 
 .container {
   display: flex;
@@ -55,10 +66,28 @@ body {
 /* Login end */
 
 /* /* forgot password start  */
-div .submit-button {
-  display: flex;
-  justify-content: center;
-  border-radius: none;
+
+.image {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.589);
 }
 
 /* forgot password end */
+
+/* passwordverification start */
+.Password-verification-contaner {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
+}
+
+/* Passwordverification end */
+
+
+/* navbar start */
+
+.navbar-container {
+  display: flex;
+  margin-top: -326px;
+  width: 100wh;
+}
+
+/* navbar-end */
