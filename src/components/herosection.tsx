@@ -1,52 +1,66 @@
+import logo from "../assets/images/logo.png";
+import back from "../assets/images/back.jpeg";
 
-
-const herosection = () => {
+const Herosection = () => {
   return (
-    <div className="hero-container mt-5 bg-white  " style={{ height: "50vh", }}>
-      <div className="row">
-        <div className="col-lg-12">
-          <div id="carouselExampleDark" className="carousel carousel-dark slide">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div className="row hero-section d-flex justify-content-center">
+      <div className="cotainer-fluid col-md-6 col-lg-12 hero-col">
+        <div className="d-flex justify-content-center align-items-center gap-3 pt-3">
+          <h2 className="heading ">
+            Welcome to Article Avenue your - Your Destination for insightful
+            Articles!
+          </h2>
+          <img
+            src={logo}
+            alt=""
+            style={{
+              width: "70px",
+              height: "70px",
+              objectFit: "cover",
+              borderRadius: "36px",
+              boxShadow: "4px 3px 10px orange",
+            }}
+          />
+        </div>
+        <p className="lead d-flex justify-content-center">
+          "Explore a World of Knowledge with Our Curated Articles Across Various
+          Topics".
+        </p>
+        <div className="descip-container px-5 d-flex gap-5 justify-content-center align-items-center flex-wrap">
+          <img
+            src={back}
+            alt="futured image"
+            style={{
+              width: "300px",
+              height: " 240px",
+              marginRight: "50px",
+              marginLeft: "20px",
+              marginTop: "10px",
+              marginBottom: "10px",
+              boxShadow: "3px 5px 15px gray",
+              borderRadius: "2px",
+            }}
+          />
+          <div className="col-5">
+            <div className="hero-description">
+              <p className="description-para  text-center d-flex mb-5">
+                Discover high-quality, well-researched articles on technology,
+                health, business, entertainment, and more. Stay informed and
+                inspired with Article Avenue.
+              </p>
             </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="10000">
-                <img src="" className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img src="" className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img src="..." className="d-block w-100" alt="..." />
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
+            <div className="buttons-links d-flex justify-content-center">
+              <button className="btn btn-primary btn-sm ">Read Now</button>
+              <button className="btn btn-secondary btn-sm ">
+                Explore Articles
+              </button>
+              <button className="btn btn-success btn-sm ">Get Started</button>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default herosection
+export default Herosection;

@@ -1,14 +1,13 @@
-
-import Navbar from '../components/navbar'
-import Herosection from '../components/herosection'
+import Navbar from "../components/navbar";
+import Herosection from "../components/herosection";
 
 const Homepage = () => {
   return (
-    <div className='homepage'>
+    <div className="homepage">
       <Navbar />
       <Herosection />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

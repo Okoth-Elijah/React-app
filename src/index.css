@@ -6,8 +6,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./assets/images/bg-image.jpeg);
-
+  /* background: url(./assets/images/bg-image.jpeg); */
+  overflow: scroll;
 }
 
 /* Register start */
@@ -30,8 +30,6 @@ body {
 }
 
 /* Register end */
-
-
 
 /* Login start */
 .login-form {
@@ -81,13 +79,36 @@ body {
 
 /* Passwordverification end */
 
-
 /* navbar start */
-
 .navbar-container {
-  display: flex;
-  margin-top: -326px;
-  width: 100wh;
+  border: 2px solid red;
+}
+/* navbar-end */
+
+/* hero section-start */
+div .hero-col {
+  background-color: white;
+  width: 1260px;
 }
 
-/* navbar-end */
+.hero-section {
+  border: 2px solid gainsboro;
+  border-radius: 3px;
+  box-shadow: 3px 5px 10px rgba(236, 160, 18, 0.603);
+}
+
+.buttons-links {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 15px;
+}
+
+.descip-container {
+  border: 2px solid rgb(179, 179, 179);
+  width: 100%;
+  box-shadow: 3px 5px 5px rgb(148, 148, 148);
+  margin-bottom: 20px;
+}
+/* 
+
+/* hero section-end */
