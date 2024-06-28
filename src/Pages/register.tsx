@@ -1,20 +1,43 @@
-import logo from '../assets/images/logo.png'
-
+import logo from "../assets/images/logo.png";
 
 const register = () => {
   return (
-    <div className="container bg-white register-container" style={{ height: "90vh", borderRadius: "2px" }}>
-      <img src={logo} alt="logo" width={100} height={100} style={{ borderRadius: "50%" }} className='image' />
+    <div
+      className="container bg-white register-container"
+      style={{ height: "90vh", borderRadius: "2px" }}
+    >
+      <img
+        src={logo}
+        alt="logo"
+        width={100}
+        height={100}
+        style={{ borderRadius: "50%" }}
+        className="image"
+      />
       <div className="row justify-content-center">
         <div className="col-lg-12">
-          <h2 className="register-title  ">Article <span className='text-warning'>Avenue</span> </h2>
-          <form action="" className=" p-3" style={{ width: "500px" }}>
+          <h2 className="register-title  ">
+            Article <span className="text-warning">Avenue</span>{" "}
+          </h2>
+          <form action="" className=" p-3 Register" style={{ width: "500px" }}>
             <div className="form-floating mb-3">
-              <input type="text" className="form-control" id="floatingInput" placeholder="Username" required />
+              <input
+                type="text"
+                className="form-control"
+                id="floatingInput"
+                placeholder="Username"
+                required
+              />
               <label htmlFor="floatingInput">UserName</label>
             </div>
             <div className="form-floating mb-3">
-              <input type="email" className="form-control" id="floatingInput" placeholder="input-email" required />
+              <input
+                type="email"
+                className="form-control"
+                id="floatingInput"
+                placeholder="input-email"
+                required
+              />
               <label htmlFor="floatingInput">Email address</label>
             </div>
             {/* <div className="form-floating mb-3">
@@ -23,22 +46,44 @@ const register = () => {
             </div> */}
             <div className="form-row  password-aline">
               <div className="form-floating mb-3 col-sm-6">
-                <input type="Password" className="form-control" id="floatingPassword" placeholder="Password" required />
+                <input
+                  type="Password"
+                  className="form-control"
+                  id="Password"
+                  placeholder="Password"
+                  required
+                />
                 <label htmlFor="floatingInput">Password</label>
               </div>
-              <div className="form-floating mb-3 col-sm-6" >
-                <input type="Password" className="form-control" id="floatingPassword" placeholder="Password" required />
+              <div className="form-floating mb-3 col-sm-6">
+                <input
+                  type="Password"
+                  className="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                  required
+                />
                 <label htmlFor="floatingInput">Confirm-Password</label>
               </div>
             </div>
 
-            <button type="submit" className="btn btn-primary btn-md ms-3">Submit</button>
-            <a href="*" className='d-flex justify-content-center mt-3 gap-3 text-decoration-none  '><span className='text-black have-account'>Already have an account?</span> Login</a>
+            <button type="submit" className="btn btn-primary btn-md ms-3">
+              Submit
+            </button>
+            <a
+              href="*"
+              className="d-flex justify-content-center mt-3 gap-3 text-decoration-none  "
+            >
+              <span className="text-black have-account">
+                Already have an account?
+              </span>{" "}
+              Login
+            </a>
           </form>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default register
+export default register;

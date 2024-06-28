@@ -1,12 +1,16 @@
 import Navbar from "../components/navbar";
 import Herosection from "../components/herosection";
+import Aboutus from "../components/aboutus";
 
 const Homepage = () => {
   return (
-    <div className="homepage">
+    <>
       <Navbar />
-      <Herosection />
-    </div>
+      <div className="homepage" style={{ marginTop: "7em" }}>
+        <Herosection />
+        <Aboutus />
+      </div>
+    </>
   );
 };
 
