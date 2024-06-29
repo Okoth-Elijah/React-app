@@ -3,7 +3,14 @@ import back from "../assets/images/back.jpeg";
 
 const Herosection = () => {
   return (
-    <div className="row hero-section d-flex justify-content-center">
+    <div
+      className="row hero-section d-flex justify-content-center"
+      style={{
+        position: "relative",
+        width: "95%",
+        marginLeft: "35px",
+      }}
+    >
       <div className="cotainer-fluid col-md-6 col-lg-12 hero-col">
         <div className="d-flex justify-content-center align-items-center gap-3 pt-3">
           <h2 className="heading ">

@@ -2,12 +2,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* background: url(./assets/images/bg-image.jpeg); */
 }
 
 /* Register start */

@@ -4,7 +4,11 @@ const Login = () => {
   return (
     <div
       className="container bg-white login-div "
-      style={{ height: "70vh", borderRadius: "2px" }}
+      style={{
+        height: "70vh",
+        borderRadius: "2px",
+        border: "2px solid lightGray",
+      }}
     >
       <img
         src={logo}

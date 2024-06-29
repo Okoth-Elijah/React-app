@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import Herosection from "../components/herosection";
 import Aboutus from "../components/aboutus";
+import Featuredarticles from "../components/featuredarticles";
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
         <Herosection />
         <Aboutus />
       </div>
+      <Featuredarticles />
     </>
   );
 };
