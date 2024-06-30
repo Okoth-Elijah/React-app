@@ -2,44 +2,93 @@ import futured from "../assets/images/futured.jpeg";
 
 const Featuredarticles = () => {
   return (
-    <div>
-      <div className="row">
-        <div
-          className="col-lg-12 d-flex "
-          style={{
-            border: "2px solid red",
-            position: "relative",
-            width: "1220px",
-            marginLeft: "50px",
-            gap: "20px",
-          }}
-        >
-          <div className="border border-5">
-            <img
-              src={futured}
-              alt="Featured Articles "
-              style={{ width: "400px" }}
-            />
+    <>
+      <div className="futered-title text-center">
+        <h2>Welcome to Article Avenue!</h2>
+        <p className="">
+          We are delighted to have you here. Our featured articles are carefully
+          curated to provide you with the most insightful, engaging, and
+          up-to-date content on topics that matter to you.
+        </p>
+      </div>
+      <div id="carouselExampleCaptions" className="carousel slide">
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={futured} className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
           </div>
-          <div className="border border-3 border-primary justify-content-center">
-            <h4 className=" border border-3 mb-3 mt-2">
-              Discover Our Top Picks: Featured Articles
-            </h4>
-
-            <p className="introduction" style={{ marginTop: "100px" }}>
-              Welcome to our featured articles section, where knowledge meets
-              inspiration. Delve into a curated selection of compelling reads
-              designed to expand your horizons. From in-depth analyses of
-              industry trends to insightful perspectives on current affairs,
-              each article is handpicked to offer valuable insights and
-              practical knowledge. Whether you're a seasoned professional or an
-              avid learner, our featured articles are here to inform, engage,
-              and inspire you on your journey of discovery.
-            </p>
+          <div className="carousel-item">
+            <img src={futured} className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src={futured} className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
           </div>
         </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
+    </>
   );
 };
 
