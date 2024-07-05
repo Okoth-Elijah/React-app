@@ -55,7 +55,7 @@ const Login = () => {
               href="Register"
               className="d-flex justify-content-center mt-3 gap-3 text-decoration-none "
             >
-              <span className="text-black">Don't have an account?</span>{" "}
+              <span className="text-black">Don't have an account?</span>
               Register.
             </a>
           </form>

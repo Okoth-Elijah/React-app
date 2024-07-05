@@ -2,9 +2,9 @@ import avatar from "../assets/images/avatar.jpeg";
 
 const navbar = () => {
   return (
-    <div className="navbar-container mb-2 border rounded-1 d-flex justify-content-center">
+    <div className="navbar-container mb-2 border rounded-1  d-flex justify-content-center">
       <nav
-        className="navbar navbar-expand-lg bg-body-tertiary "
+        className="navbar navbar-expand-lg bg-body-tertiary  "
         style={{
           position: "fixed",
           top: "0",
@@ -12,7 +12,7 @@ const navbar = () => {
           zIndex: "1000",
         }}
       >
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <a className="navbar-brand" href="#">
             Article <span className="text-warning">Avenue</span>
           </a>
@@ -28,7 +28,7 @@ const navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse px-3 py-3 pe-5 ps-5"
+            className="collapse navbar-collapse px-3 py-3  ps-5 "
             id="navbarScroll"
           >
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
@@ -131,7 +131,7 @@ const navbar = () => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="Aboutus" aria-disabled="true">
+                <a className="nav-link" href="#" aria-disabled="true">
                   About
                 </a>
               </li>
@@ -145,12 +145,6 @@ const navbar = () => {
                   Login
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="Register" aria-disabled="true">
-                  SignUp
-                </a>
-              </li>
-
               <li className="nav-item">
                 <a className="nav-link" href="#" aria-disabled="true">
                   Featured Articles

@@ -79,9 +79,6 @@ body {
 
 /* navbar start */
 
-nav div .proflie a img .profile-image {
-  border: 2px solid red;
-}
 /* navbar-end */
 
 /* hero section-start */
@@ -109,5 +106,34 @@ div .hero-col {
   margin-bottom: 20px;
 }
 /* futered articles-start */
+
+.category-image {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+}
+.category-image:hover {
+  box-shadow: 3px 2px 15px rgb(240, 182, 25);
+  transition-delay: boxshadow 4s;
+}
+
+.background {
+  border: transparent;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.para {
+  width: 100%;
+  transition: color 0.15s ease;
+  text-align: center;
+}
+
+.para:hover {
+  color: rgb(0, 80, 0);
+}
 
 /* featured articles-start */

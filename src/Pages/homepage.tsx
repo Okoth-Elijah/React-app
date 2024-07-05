@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar";
 import Herosection from "../components/herosection";
-import Aboutus from "../components/aboutus";
-import Featuredarticles from "../components/featuredarticles";
+import Futuredarticles from "../components/futuredarticles";
+import Profilepage from "./profilepage";
 
 const Homepage = () => {
   return (
@@ -9,9 +9,14 @@ const Homepage = () => {
       <Navbar />
       <div className="homepage" style={{ marginTop: "7em" }}>
         <Herosection />
-        <Aboutus />
+
+        <div className="mx-auto px-5 w-100">
+          <div className="row background py-2">
+            <Futuredarticles />
+          </div>
+        </div>
+        <Profilepage />
       </div>
-      <Featuredarticles />
     </>
   );
 };
