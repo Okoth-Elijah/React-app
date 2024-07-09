@@ -4,10 +4,15 @@ const Aboutus = () => {
   return (
     <div
       style={{
-        width: "95%",
-        marginLeft: "35px",
-        marginTop: "20px",
-        marginBottom: "30px",
+        width: "100wh",
+        height: "100vh",
+        display: "flex",
+        boxSizing: "border-box",
+        border: "2px solid red",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "red",
+        position: "relative",
       }}
     >
       <Accordion />

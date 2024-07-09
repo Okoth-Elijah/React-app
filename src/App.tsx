@@ -5,6 +5,9 @@ import Forgotpassword from "./Pages/forgotpassword";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/homepage";
 import Passwordverification from "./Pages/Passwordverification";
+import Profilepage from "./Pages/profilepage";
+import Aboutus from "./components/aboutus";
+import Individualarticlepage from "./Pages/individualarticlepage";
 
 function App() {
   return (
@@ -15,9 +18,15 @@ function App() {
         <Route path="/forgotpassword" element={<Forgotpassword />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/profilepage" element={<Profilepage />} />
+        <Route path="/aboutus" element={<Aboutus />} />
         <Route
           path="/Passwordverification"
           element={<Passwordverification />}
+        />
+        <Route
+          path="/individualarticlepage"
+          element={<Individualarticlepage />}
         />
 
         <Route path="/*" element={<Login />} />

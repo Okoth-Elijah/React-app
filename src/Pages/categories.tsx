@@ -12,7 +12,7 @@ import culture from "../assets/images/culture.jpeg";
 import food from "../assets/images/food.jpeg";
 import health from "../assets/images/health.jpeg";
 
-const futuredarticles = () => {
+const Categories = () => {
   return (
     <>
       <div className="col-12 col-md-4 col-lg-3 py-2 text-center ">
@@ -81,7 +81,7 @@ const futuredarticles = () => {
       <div className="col-12 col-md-4 col-lg-3 py-2 text-center ">
         <img src={food} alt="" className="category-image" />
         <h5 className="para pt-3  ">Food & Drinks</h5>
-        <button type="button" className=" btn btn-primary w-100 btn-3">
+        <button type="button" className=" btn btn-primary w-100 btn-3 ">
           Explore more
         </button>
       </div>
@@ -110,4 +110,4 @@ const futuredarticles = () => {
   );
 };
 
-export default futuredarticles;
+export default Categories;

@@ -1,7 +1,5 @@
-const recoverpassword = () => {
-  return (
-    <div>recoverpassword</div>
-  )
-}
+const Recoverpassword = () => {
+  return <div>recoverpassword</div>;
+};
 
-export default recoverpassword
+export default Recoverpassword;

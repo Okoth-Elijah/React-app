@@ -1,6 +1,6 @@
 const Accordion = () => {
   return (
-    <div className="accordion" id="accordionExample">
+    <div className="accordion " id="accordionExample ">
       <div className="accordion-item">
         <h2 className="accordion-header">
           <button

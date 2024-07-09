@@ -1,7 +1,6 @@
 import Navbar from "../components/navbar";
 import Herosection from "../components/herosection";
-import Futuredarticles from "../components/futuredarticles";
-import Profilepage from "./profilepage";
+import Categories from "./categories";
 
 const Homepage = () => {
   return (
@@ -12,10 +11,9 @@ const Homepage = () => {
 
         <div className="mx-auto px-5 w-100">
           <div className="row background py-2">
-            <Futuredarticles />
+            <Categories />
           </div>
         </div>
-        <Profilepage />
       </div>
     </>
   );

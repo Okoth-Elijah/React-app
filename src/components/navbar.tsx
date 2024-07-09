@@ -1,6 +1,6 @@
 import avatar from "../assets/images/avatar.jpeg";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <div className="navbar-container mb-2 border rounded-1  d-flex justify-content-center">
       <nav
@@ -141,8 +141,8 @@ const navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="login-form " aria-disabled="true">
-                  Login
+                <a className="nav-link" href="#" aria-disabled="true">
+                  Logout
                 </a>
               </li>
               <li className="nav-item">
@@ -204,4 +204,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

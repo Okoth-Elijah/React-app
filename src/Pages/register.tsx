@@ -2,10 +2,7 @@ import logo from "../assets/images/logo.png";
 
 const register = () => {
   return (
-    <div
-      className="container bg-white register-container"
-      style={{ height: "90vh", borderRadius: "2px" }}
-    >
+    <div className="container bg-white register-container">
       <img
         src={logo}
         alt="logo"

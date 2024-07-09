@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +16,10 @@ body {
 }
 
 .register-container {
+  border: 2px solid rgb(204, 201, 201);
   box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
+  height: 90vh;
+  border-radius: 3px;
 }
 
 .password-aline {
@@ -71,15 +75,12 @@ body {
 
 /* passwordverification start */
 .Password-verification-contaner {
+  border: 2px solid lightgrey;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
 }
 
 /* Passwordverification end */
-
-/* navbar start */
-
-/* navbar-end */
 
 /* hero section-start */
 div .hero-col {
@@ -137,3 +138,60 @@ div .hero-col {
 }
 
 /* featured articles-start */
+
+/* Individualarticlepage start */
+
+section.bor {
+  border: 3px solid green;
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: inherit;
+  align-items: center;
+  width: 200vh;
+  margin-top: -300px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-pic img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 36px;
+}
+
+.searchnav {
+  width: 450px;
+  justify-content: center;
+}
+
+.search-nav {
+  display: flex;
+  gap: 3px;
+}
+
+div .linksection {
+  width: 35rem;
+  margin-right: -15px;
+}
+
+div .linksection span a {
+  text-decoration: none;
+  color: gray;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+div .linksection span a:hover {
+  color: rgb(253, 118, 64);
+  border-bottom: 2px solid orangered;
+  border-bottom-width: 3px;
+}
+
+/* Individualarticlepage end */
