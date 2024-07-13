@@ -1,3 +1,6 @@
+import menu from "../assets/images/menu.jpeg";
+import { NavLink } from "react-router-dom";
+
 const Navlinks = () => {
   return (
     <div
@@ -7,16 +10,21 @@ const Navlinks = () => {
       }}
     >
       <span>
-        <a href="#">Recent Articles</a>
+        <NavLink to="#">Recent Articles</NavLink>
       </span>
       <span>
-        <a href="#">Favourite Articless</a>
+        <NavLink to="#">Favourite Articless</NavLink>
       </span>
       <span>
-        <a href="#">Comments</a>
+        <NavLink to="#">Comments</NavLink>
       </span>
       <span>
-        <a href="#">Posts</a>
+        <NavLink to="#">Posts</NavLink>
+      </span>
+      <span>
+        <NavLink to="#">
+          <img src={menu} alt="img" style={{ width: "20px" }} />
+        </NavLink>
       </span>
     </div>
   );

@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo.png";
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -51,13 +52,13 @@ const Login = () => {
             <button type="submit" className="btn btn-primary  w-100">
               Login
             </button>
-            <a
-              href="Register"
+            <NavLink
+              to="Register"
               className="d-flex justify-content-center mt-3 gap-3 text-decoration-none "
             >
               <span className="text-black">Don't have an account?</span>
               Register.
-            </a>
+            </NavLink>
           </form>
         </div>
       </div>

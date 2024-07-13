@@ -1,4 +1,5 @@
 import logo from "../assets/images/logo.png";
+import { NavLink } from "react-router-dom";
 
 const register = () => {
   return (
@@ -14,7 +15,7 @@ const register = () => {
       <div className="row justify-content-center">
         <div className="col-lg-12">
           <h2 className="register-title  ">
-            Article <span className="text-warning">Avenue</span>{" "}
+            Article <span className="text-warning">Avenue</span>
           </h2>
           <form action="" className=" p-3 Register" style={{ width: "500px" }}>
             <div className="form-floating mb-3">
@@ -67,15 +68,15 @@ const register = () => {
             <button type="submit" className="btn btn-primary btn-md ms-3">
               Submit
             </button>
-            <a
-              href="*"
+            <NavLink
+              to="*"
               className="d-flex justify-content-center mt-3 gap-3 text-decoration-none  "
             >
               <span className="text-black have-account">
                 Already have an account?
-              </span>{" "}
+              </span>
               Login
-            </a>
+            </NavLink>
           </form>
         </div>
       </div>

@@ -2,7 +2,7 @@ const Searchbar = () => {
   return (
     <nav className="navbar navbar-light  searchnav ">
       <form className="form-inline">
-        <div className="search-nav form-group">
+        <div className="search-nav form-group ">
           <input
             className="form-control mr-sm-2"
             type="search"

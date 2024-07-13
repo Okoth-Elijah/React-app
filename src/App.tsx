@@ -3,11 +3,13 @@ import Register from "./Pages/register";
 import Recoverpassword from "./Pages/recoverpassword";
 import Forgotpassword from "./Pages/forgotpassword";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/homepage";
-import Passwordverification from "./Pages/Passwordverification";
-import Profilepage from "./Pages/profilepage";
+import MainLayout from "./layouts/MainLayout";
 import Aboutus from "./components/aboutus";
 import Individualarticlepage from "./Pages/individualarticlepage";
+import Passwordverification from "./Pages/Passwordverification";
+import Profilepage from "./Pages/profilepage";
+import Homepage from "./Pages/homepage";
+import CreatePassword from "./components/CreatePassword";
 
 function App() {
   return (
@@ -17,17 +19,21 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpassword" element={<Forgotpassword />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/profilepage" element={<Profilepage />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route
-          path="/Passwordverification"
-          element={<Passwordverification />}
-        />
-        <Route
-          path="/individualarticlepage"
-          element={<Individualarticlepage />}
-        />
+        <Route path="/createpassword" element={<CreatePassword />} />
+
+        <Route path="/articles/*" element={<MainLayout />}>
+          <Route path="home" element={<Homepage />} />
+          <Route path="profilepage" element={<Profilepage />} />
+          <Route path="aboutus" element={<Aboutus />} />
+          <Route
+            path="Passwordverification"
+            element={<Passwordverification />}
+          />
+          <Route
+            path="individualarticlepage"
+            element={<Individualarticlepage />}
+          />
+        </Route>
 
         <Route path="/*" element={<Login />} />
       </Routes>

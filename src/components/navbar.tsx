@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import avatar from "../assets/images/avatar.jpeg";
 
 const Navbar = () => {
@@ -13,9 +14,9 @@ const Navbar = () => {
         }}
       >
         <div className="container-fluid ">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="#">
             Article <span className="text-warning">Avenue</span>
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -33,122 +34,126 @@ const Navbar = () => {
           >
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link active" aria-current="page" to="#">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <NavLink
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Categories
-                </a>
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Technology
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Health and Wellness
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Lifestyle
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Business and Finance
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Science
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Education
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Entertainment
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Politics
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Sports
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Food and Drink
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Culture
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Environment
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <NavLink className="dropdown-item" to="#">
                       Automotive
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" aria-disabled="true">
+                <NavLink className="nav-link" to="#" aria-disabled="true">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" aria-disabled="true">
+                <NavLink className="nav-link" to="#" aria-disabled="true">
                   Contact
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" aria-disabled="true">
+                <NavLink
+                  className="nav-link"
+                  to="Register"
+                  aria-disabled="true"
+                >
                   Logout
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" aria-disabled="true">
+                <NavLink className="nav-link" to="#" aria-disabled="true">
                   Featured Articles
-                </a>
+                </NavLink>
               </li>
             </ul>
             <form
@@ -181,7 +186,7 @@ const Navbar = () => {
               </div>
             </form>
             <div className="proflie">
-              <a href="#">
+              <NavLink to="#">
                 <img
                   src={avatar}
                   alt="Profile"
@@ -195,7 +200,7 @@ const Navbar = () => {
                     transition: "boxshadow easein",
                   }}
                 />
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
