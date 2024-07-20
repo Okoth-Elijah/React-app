@@ -1,9 +1,37 @@
 import logo from "../assets/images/logo.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const register = () => {
+const Register = () => {
+  const [name, setName] = useState("");
+  const [Email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
+
+  const navigate = useNavigate();
+
+  const input = (e: { preventDefault: () => void }) => {
+    e.preventDefault;
+
+    if (password === confirm) {
+      const data = {
+        name: name,
+        email: Email,
+        password: password,
+      };
+
+      localStorage.setItem("User_data", String(data));
+      console.log(data);
+
+      // window.location.href = "/login";
+      navigate("/login");
+    } else {
+      alert("Password and Confirm password should be the same");
+    }
+  };
+
   return (
-    <div className="container bg-white register-container">
+    <div className="container bg-white mt-3 register-container ">
       <img
         src={logo}
         alt="logo"
@@ -23,6 +51,7 @@ const register = () => {
                 type="text"
                 className="form-control"
                 id="floatingInput"
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Username"
                 required
               />
@@ -33,21 +62,19 @@ const register = () => {
                 type="email"
                 className="form-control"
                 id="floatingInput"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="input-email"
                 required
               />
               <label htmlFor="floatingInput">Email address</label>
             </div>
-            {/* <div className="form-floating mb-3">
-              <input type="tel" className="form-control" id="floatingInput" placeholder="PhoneNumber" required />
-              <label htmlFor="floatingInput">PhoneNumber</label>
-            </div> */}
             <div className="form-row  password-aline">
               <div className="form-floating mb-3 col-sm-6">
                 <input
                   type="Password"
                   className="form-control"
                   id="Password"
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
                   required
                 />
@@ -58,6 +85,7 @@ const register = () => {
                   type="Password"
                   className="form-control"
                   id="floatingPassword"
+                  onChange={(e) => setConfirm(e.target.value)}
                   placeholder="Password"
                   required
                 />
@@ -65,18 +93,19 @@ const register = () => {
               </div>
             </div>
 
-            <button type="submit" className="btn btn-primary btn-md ms-3">
+            <button
+              type="submit"
+              onClick={input}
+              className="btn btn-primary btn-md  w-100"
+            >
               Submit
             </button>
-            <NavLink
-              to="*"
-              className="d-flex justify-content-center mt-3 gap-3 text-decoration-none  "
-            >
-              <span className="text-black have-account">
-                Already have an account?
-              </span>
-              Login
-            </NavLink>
+            <div className="link-container d-flex justify-content-center mt-3 ">
+              <p style={{ width: "50%" }}>Already have an account?</p>
+              <NavLink to="*" className=" text-decoration-none  ">
+                Login
+              </NavLink>
+            </div>
           </form>
         </div>
       </div>
@@ -84,4 +113,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

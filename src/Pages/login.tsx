@@ -1,10 +1,20 @@
+import { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    console.log({ email, password });
+  };
+
   return (
     <div
-      className="container bg-white login-div "
+      className="container bg-white mt-5 login-div"
       style={{
         height: "70vh",
         borderRadius: "2px",
@@ -37,28 +47,33 @@ const Login = () => {
                 className="form-control pass mb-3"
                 id="Email"
                 name="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter email"
-                required
+                // required
               />
               <input
                 type="Password"
                 className="form-control pass"
                 id="Password"
+                onChange={(e) => setPassword(e.target.value)}
                 name="Password"
                 placeholder="Password"
-                required
+                // required
               />
             </div>
-            <button type="submit" className="btn btn-primary  w-100">
+            <button
+              type="submit"
+              className="btn btn-primary w-100"
+              onClick={handleLogin}
+            >
               Login
             </button>
-            <NavLink
-              to="Register"
-              className="d-flex justify-content-center mt-3 gap-3 text-decoration-none "
-            >
-              <span className="text-black">Don't have an account?</span>
-              Register.
-            </NavLink>
+            <div className="link-container d-flex gap-3 mt-3 justify-content-center">
+              <p>Don't have an account?</p>
+              <NavLink to="Register" className=" text-decoration-none ">
+                Register.
+              </NavLink>
+            </div>
           </form>
         </div>
       </div>

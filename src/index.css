@@ -1,16 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
 /* Register start */
+div .register-container {
+  width: 530px;
+}
 .register-title {
   display: flex;
   justify-content: center;
@@ -49,8 +40,10 @@ body {
   margin-top: 5px;
 }
 
-.login-div {
+div .login-div {
   box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
+  width: 400px;
+  position: relative;
 }
 
 .image {
@@ -220,3 +213,53 @@ div .linksection span a:hover {
   background-position: center;
 }
 /* background-End */
+
+/* create password start */
+.par {
+  font-size: 34px;
+  background: url(./assets/images/science.jpeg);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: center;
+  color: transparent;
+}
+
+.image-section {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 50em;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/images/Automotive.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  stroke-opacity: inherit;
+}
+.confirm:hover {
+  transition: box-shadow 0.4s ease-in-out;
+  box-shadow: 5px 5px 15px orange;
+}
+/* create password end */
+
+/* contact-start */
+.eclipse {
+  margin-left: 750px;
+  margin-top: -125px;
+  padding-bottom: -300px;
+  height: 150px;
+  width: 150px;
+  opacity: 0.5;
+  border-radius: 100px;
+  background: rgb(224, 218, 218);
+  z-index: -1;
+  box-shadow: 5px 3px 15px rgb(240, 182, 25);
+}
+
+/* .eclipse:hover {
+  box-shadow: "5px 3px 15px orangered";
+} */
+/* contact-end */
