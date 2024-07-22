@@ -13,6 +13,7 @@ import CreatePassword from "./components/CreatePassword";
 import FooterPage from "./Pages/FooterPage";
 import ContactUs from "./Pages/ContactUs";
 import FuturedArticles from "./Pages/FuturedArticles";
+import Technology from "./components/Technology";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           element={<Individualarticlepage />}
         />
         <Route path="contactus" element={<ContactUs />} />
+        <Route path="technology" element={<Technology />} />
       </Route>
       <Route path="footerpage" element={<FooterPage />} />
       <Route path="/*" element={<Login />} />

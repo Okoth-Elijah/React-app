@@ -2,18 +2,21 @@ import logo from "../assets/images/logo.png";
 
 const Passwordverification = () => {
   return (
-    <div className="container-fluid bg-white Password-verification-contaner">
+    <div
+      className="container-fluid bg-white border border-danger d-flex justify-content-center"
+      style={{ height: "100vh", alignItems: "center" }}
+    >
       <div className="row">
         <div className="col-lg-12 " style={{ width: "25rem" }}>
-          <img
-            src={logo}
-            alt="logo"
-            width={100}
-            height={100}
-            style={{ borderRadius: "50%", marginLeft: "35%" }}
-            className="image mb-3 image-fluid mt-3"
-          />
-          <form action="">
+          <form action="" className="border border-muted border-3 px-3">
+            <img
+              src={logo}
+              alt="logo"
+              width={100}
+              height={100}
+              style={{ borderRadius: "50%", marginLeft: "35%" }}
+              className="image mb-3 image-fluid mt-3"
+            />
             <div className="form-floating mb-3">
               <div>
                 <div className="d-flex justify-content-center gap-2">

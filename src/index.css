@@ -259,7 +259,22 @@ div .linksection span a:hover {
   box-shadow: 5px 3px 15px rgb(240, 182, 25);
 }
 
-/* .eclipse:hover {
-  box-shadow: "5px 3px 15px orangered";
-} */
 /* contact-end */
+
+/* socillinks start */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-left: -10px;
+}
+
+.para5 {
+  cursor: pointer;
+  margin-top: -3px;
+  margin-left: 5px;
+}
+
+.para5:hover {
+  color: rgb(0, 49, 0);
+}
+/* socillinks end */

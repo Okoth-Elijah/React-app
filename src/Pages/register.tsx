@@ -94,7 +94,7 @@ const Register = () => {
             </div>
 
             <button
-              type="submit"
+              type="button"
               onClick={input}
               className="btn btn-primary btn-md  w-100"
             >
