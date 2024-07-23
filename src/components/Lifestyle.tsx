@@ -1,26 +1,29 @@
-import technology from "../assets/images/technology.jpeg";
 import SocialLinks from "./SocialLinks";
-import one from "../assets/images/one.jpeg";
-import two from "../assets/images/two.jpeg";
-import three from "../assets/images/three.jpeg";
-import four from "../assets/images/four.jpeg";
-import five from "../assets/images/five.jpeg";
-import six from "../assets/images/six.jpeg";
-import security from "../assets/images/Security.jpeg";
+import minimalistliving from "../assets/images/minimalistliving.jpeg";
+import traveltips from "../assets/images/traveltips.jpeg";
+import homedecor from "../assets/images/homedecor.jpeg";
+import fashion from "../assets/images/fashion.jpeg";
+import worklife from "../assets/images/worklife.jpeg";
+import adventure from "../assets/images/adventure.jpeg";
+import culinary from "../assets/images/culinary.jpeg";
+import fitness from "../assets/images/fitness.jpeg";
 
-const Technology = () => {
+const Lifestyle = () => {
   return (
-    <section className="container-fluid " style={{ marginTop: "7em" }}>
-      <div className="row border d-flex justify-content-center">
+    <section>
+      <div
+        className="row d-flex justify-content-center "
+        style={{ marginTop: "90px", width: "100%", position: "relative" }}
+      >
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            The Rise of Quantum Computing
+            Minimalist Living
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -28,7 +31,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={technology}
+              src={minimalistliving}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -47,18 +50,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            AI and Machine Learning
+            Travel Tips
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -66,7 +69,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={one}
+              src={traveltips}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -85,18 +88,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            The Internet of Things (IoT)
+            Home Decor Ideas
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -104,7 +107,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={two}
+              src={homedecor}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -123,18 +126,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Cybersecurity in the Digital Age
+            Fashion Trends
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -142,7 +145,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={three}
+              src={fashion}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -161,18 +164,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            The Rise of Quantum Computing
+            Work-Life Balance
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -180,7 +183,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={four}
+              src={worklife}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -199,18 +202,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            AI and Machine Learning
+            Outdoor Adventures
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -218,7 +221,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={five}
+              src={adventure}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -237,18 +240,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            The Internet of Things (IoT)
+            Culinary Delights
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -256,7 +259,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={six}
+              src={culinary}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -275,18 +278,18 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center "
           style={{ width: "300px" }}
         >
           <h5
             className="mt-3"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Cybersecurity in the Digital Age
+            Fitness Routines
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
@@ -294,7 +297,7 @@ const Technology = () => {
           >
             <img
               className="image-fluid"
-              src={security}
+              src={fitness}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -305,7 +308,7 @@ const Technology = () => {
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 mt-3  "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -313,7 +316,7 @@ const Technology = () => {
             >
               Read More
             </button>
-            {<SocialLinks />}
+            <SocialLinks />
           </div>
         </div>
       </div>
@@ -321,4 +324,4 @@ const Technology = () => {
   );
 };
 
-export default Technology;
+export default Lifestyle;

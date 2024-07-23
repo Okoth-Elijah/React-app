@@ -14,6 +14,18 @@ import FooterPage from "./Pages/FooterPage";
 import ContactUs from "./Pages/ContactUs";
 import FuturedArticles from "./Pages/FuturedArticles";
 import Technology from "./components/Technology";
+import HealthAndWellness from "./components/HealthAndWellness";
+import Lifestyle from "./components/Lifestyle";
+import Business from "./components/Business";
+import Science from "./components/Science";
+import Education from "./components/Education";
+import Entertainment from "./components/Entertainment";
+import Politics from "./components/Politics";
+import Sports from "./components/Sports";
+import FoodAndDrinks from "./components/FoodAndDrinks";
+import { Culture } from "./components/Culture";
+import Enviroment from "./components/Enviroment";
+import Automotive from "./components/Automotive";
 
 function App() {
   return (
@@ -36,6 +48,18 @@ function App() {
         />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="technology" element={<Technology />} />
+        <Route path="healthandwellness" element={<HealthAndWellness />} />
+        <Route path="lifestyle" element={<Lifestyle />} />
+        <Route path="business" element={<Business />} />
+        <Route path="science" element={<Science />} />
+        <Route path="education" element={<Education />} />
+        <Route path="entertainment" element={<Entertainment />} />
+        <Route path="politics" element={<Politics />} />
+        <Route path="sports" element={<Sports />} />
+        <Route path="foodanddrinks" element={<FoodAndDrinks />} />
+        <Route path="culture" element={<Culture />} />
+        <Route path="environment" element={<Enviroment />} />
+        <Route path="automotive" element={<Automotive />} />
       </Route>
       <Route path="footerpage" element={<FooterPage />} />
       <Route path="/*" element={<Login />} />
