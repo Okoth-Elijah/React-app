@@ -20,7 +20,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Minimalist Living
@@ -30,7 +30,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={minimalistliving}
               alt="technology-article"
               style={{
@@ -48,7 +48,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -58,7 +58,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Travel Tips
@@ -68,7 +68,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={traveltips}
               alt="technology-article"
               style={{
@@ -86,7 +86,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -96,7 +96,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Home Decor Ideas
@@ -106,7 +106,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={homedecor}
               alt="technology-article"
               style={{
@@ -124,7 +124,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -134,7 +134,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Fashion Trends
@@ -144,7 +144,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={fashion}
               alt="technology-article"
               style={{
@@ -162,7 +162,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -172,7 +172,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Work-Life Balance
@@ -182,7 +182,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={worklife}
               alt="technology-article"
               style={{
@@ -200,7 +200,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -210,7 +210,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Outdoor Adventures
@@ -220,7 +220,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={adventure}
               alt="technology-article"
               style={{
@@ -238,7 +238,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -248,7 +248,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Culinary Delights
@@ -258,7 +258,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={culinary}
               alt="technology-article"
               style={{
@@ -276,7 +276,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -286,7 +286,7 @@ const Lifestyle = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center "
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Fitness Routines
@@ -296,7 +296,7 @@ const Lifestyle = () => {
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
+              className="image-fluid im-s"
               src={fitness}
               alt="technology-article"
               style={{
@@ -314,7 +314,7 @@ const Lifestyle = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>

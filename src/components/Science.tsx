@@ -13,7 +13,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -26,11 +26,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -46,7 +51,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -59,11 +64,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -79,7 +89,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -92,11 +102,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -112,7 +127,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -125,11 +140,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -145,7 +165,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -158,11 +178,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -178,7 +203,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -191,11 +216,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -211,7 +241,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -224,11 +254,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",
@@ -244,7 +279,7 @@ const Science = () => {
           style={{ width: "300px" }}
         >
           <h5
-            className="mt-3"
+            className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
             Wellness Simplified
@@ -257,11 +292,16 @@ const Science = () => {
               className="image-fluid"
               src={technology}
               alt="technology-article"
-              style={{ width: "250px" }}
+              style={{
+                width: "250px",
+                height: "350px",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
             />
             <button
               type="button"
-              className="btn btn-primary rounded-1 "
+              className="btn btn-primary rounded-1 mt-3 "
               style={{
                 display: "flex",
                 marginTop: "1px",

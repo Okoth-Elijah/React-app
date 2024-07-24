@@ -277,4 +277,9 @@ div .linksection span a:hover {
 .para5:hover {
   color: rgb(0, 49, 0);
 }
+
+.im-s:hover {
+  box-shadow: 3px 3px 10px rgb(252, 139, 10);
+  transition: boxshadow 18s ease-in;
+}
 /* socillinks end */

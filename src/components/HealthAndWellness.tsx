@@ -47,7 +47,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -85,7 +85,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -123,7 +123,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -161,7 +161,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -199,7 +199,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -237,7 +237,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -275,7 +275,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>
@@ -313,7 +313,7 @@ const HealthAndWellness = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             <SocialLinks />
           </div>

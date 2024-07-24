@@ -45,7 +45,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -83,7 +83,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -121,7 +121,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -159,7 +159,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -197,7 +197,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -235,7 +235,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -273,7 +273,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
@@ -311,7 +311,7 @@ const Technology = () => {
                 marginTop: "1px",
               }}
             >
-              Read More
+              Explore Now
             </button>
             {<SocialLinks />}
           </div>
