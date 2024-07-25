@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import Herosection from "../components/herosection";
-import Categories from "./categories";
+import TrendingContent from "../components/TrendingContent";
+import Content from "../components/Content";
 
 const Homepage = () => {
   return (
@@ -10,9 +11,9 @@ const Homepage = () => {
         <Herosection />
 
         <div className="mx-auto px-5 w-100">
-          <div className="row background py-2">
-            <Categories />
-          </div>
+          <div className="row background py-2"></div>
+          <TrendingContent />
+          <Content />
         </div>
       </div>
     </>

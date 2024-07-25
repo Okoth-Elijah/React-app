@@ -1,5 +1,12 @@
-import technology from "../assets/images/technology.jpeg";
 import SocialLinks from "./SocialLinks";
+import biotechnology from "../assets/images/biotechnology.jpeg";
+import space from "../assets/images/space.jpeg";
+import physics from "../assets/images/physics.jpeg";
+import neuroscience from "../assets/images/neuroscience.jpeg";
+import climate from "../assets/images/climate.jpeg";
+import genetics from "../assets/images/genetics.jpeg";
+import austrobiology from "../assets/images/austrobiology.jpeg";
+import quantom from "../assets/images/quantom.jpeg";
 
 const Science = () => {
   return (
@@ -16,15 +23,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Quantum Mysteries
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={quantom}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -54,15 +61,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Astrobiology
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={austrobiology}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -92,15 +99,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Genetic Frontiers
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={genetics}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -130,15 +137,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Climate Science
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={climate}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -168,15 +175,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Neuroscience
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={neuroscience}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -206,15 +213,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Physics Unveiled
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={physics}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -244,15 +251,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Space Exploration
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={space}
               alt="technology-article"
               style={{
                 width: "250px",
@@ -282,15 +289,15 @@ const Science = () => {
             className="mt-3 text-center"
             style={{ fontSize: "18px", marginBottom: "-10px" }}
           >
-            Wellness Simplified
+            Biotechnology
           </h5>
           <div
             className=" justify-content-center my-3 py-3 ps-2"
             style={{ position: "relative", width: "270px" }}
           >
             <img
-              className="image-fluid"
-              src={technology}
+              className="image-fluid im-s"
+              src={biotechnology}
               alt="technology-article"
               style={{
                 width: "250px",
