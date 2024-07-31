@@ -1,5 +1,6 @@
 body {
   display: flow-root;
+  background: rgb(185, 185, 185);
 }
 
 /* Register start */
@@ -28,7 +29,7 @@ div .register-container {
 }
 
 /* Register end */
-
+n
 /* Login start */
 .login-form {
   width: 350px;
@@ -48,6 +49,9 @@ div .login-div {
   box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
   width: 400px;
   position: relative;
+  height: 70vh;
+  border-radius: 2px;
+  border: 2px solid lightGray;
 }
 
 .image {
@@ -287,3 +291,33 @@ div .linksection span a:hover {
   transition: boxshadow 18s ease-in;
 }
 /* socillinks end */
+
+/* footer start */
+
+.contact-container {
+  background-color: rgb(255, 166, 0);
+  /* border-bottom: 2px linear-gradient(to bottom, #ff7e5f, #feb47b); */
+}
+
+.contact-heading,
+.p1 {
+  color: rgb(255, 123, 0);
+}
+
+.vvvv {
+  position: relative;
+}
+
+.contact-body {
+  background-color: rgb(5, 5, 78);
+  /* position: fixed; */
+}
+
+.contact-content {
+  background: url("https://i.pinimg.com/564x/89/3b/82/893b822b5c52c604a002f0d4f788cca6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* footer end */

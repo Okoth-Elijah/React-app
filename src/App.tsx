@@ -10,8 +10,6 @@ import Passwordverification from "./Pages/Passwordverification";
 import Profilepage from "./Pages/profilepage";
 import Homepage from "./Pages/homepage";
 import CreatePassword from "./components/CreatePassword";
-import FooterPage from "./Pages/FooterPage";
-import ContactUs from "./Pages/ContactUs";
 import FuturedArticles from "./Pages/FuturedArticles";
 import Technology from "./components/Technology";
 import HealthAndWellness from "./components/HealthAndWellness";
@@ -26,6 +24,7 @@ import FoodAndDrinks from "./components/FoodAndDrinks";
 import { Culture } from "./components/Culture";
 import Enviroment from "./components/Enviroment";
 import Automotive from "./components/Automotive";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -36,6 +35,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/createpassword" element={<CreatePassword />} />
       <Route path="futuredarticles" element={<FuturedArticles />} />
+      <Route path="profilepage" element={<Profilepage />} />
 
       <Route path="/articles/*" element={<MainLayout />}>
         <Route path="home" element={<Homepage />} />
@@ -46,7 +46,6 @@ function App() {
           path="individualarticlepage"
           element={<Individualarticlepage />}
         />
-        <Route path="contactus" element={<ContactUs />} />
         <Route path="technology" element={<Technology />} />
         <Route path="healthandwellness" element={<HealthAndWellness />} />
         <Route path="lifestyle" element={<Lifestyle />} />
@@ -60,8 +59,9 @@ function App() {
         <Route path="culture" element={<Culture />} />
         <Route path="environment" element={<Enviroment />} />
         <Route path="automotive" element={<Automotive />} />
+        <Route path="contactus" element={<ContactUs />} />
       </Route>
-      <Route path="footerpage" element={<FooterPage />} />
+
       <Route path="/*" element={<Login />} />
     </Routes>
   );

@@ -4,7 +4,7 @@ import avatar from "../assets/images/avatar.jpeg";
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
+      className="navbar navbar-expand-lg bg-body-tertiary nav-style"
       style={{
         position: "fixed",
         top: "0",
@@ -13,7 +13,7 @@ const Navbar = () => {
       }}
     >
       <div className="container-fluid ">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/articles/home">
           Article <span className="text-warning">Avenue</span>
         </Link>
         <button
@@ -28,7 +28,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse px-3 py-3  ps-5 "
+          className="collapse navbar-collapse px-3 py-3  ps-5  good"
           id="navbarScroll"
         >
           <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
@@ -152,7 +152,7 @@ const Navbar = () => {
                 to="/articles/contactus"
                 aria-disabled="true"
               >
-                Contact
+                Contact Us
               </Link>
             </li>
             <li className="nav-item">

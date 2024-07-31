@@ -1,19 +1,35 @@
 import biotechnology from "../assets/images/biotechnology.jpeg";
 import coffee from "../assets/images/coffee.jpeg";
+import climate from "../assets/images/climate.jpeg";
+import Bike from "../assets/images/Bike.jpeg";
 
 const Content = () => {
   return (
     <>
       <div className="d-flex justify-content-between ">
-        <h5>Allcategories</h5>
-        <h5>News</h5>
-        <h5>Personal Advice</h5>
-        <h5>Self-Development</h5>
-        <h5>Travel</h5>
-        <h5>Funny situations</h5>
-        <h5>Natural</h5>
+        <span>
+          <h5>Allcategories</h5>
+        </span>
+        <span>
+          <h5>News</h5>
+        </span>
+        <span>
+          <h5>Personal Advice</h5>
+        </span>
+        <span>
+          <h5>Self-Development</h5>
+        </span>
+        <span>
+          <h5>Travel</h5>
+        </span>
+        <span>
+          <h5>Funny situations</h5>
+        </span>
+        <span>
+          <h5>Natural</h5>
+        </span>
       </div>
-      <section className="border mb-5 mt-5 d-flex gap-3">
+      <section className=" px-3 py-2 mb-5 mt-5 d-flex gap-3">
         <aside style={{ width: "50%", height: "110vh" }}>
           <img
             src={biotechnology}
@@ -38,29 +54,56 @@ const Content = () => {
           />
           <img
             className="image-fluid rounded-2 mb-3"
-            src={coffee}
+            src={Bike}
             alt="img"
             style={{ position: "relative", width: "100%", height: "35%" }}
           />
           <img
             className="image-fluid rounded-2 mb-3"
-            src={coffee}
+            src={climate}
             alt="img"
             style={{ position: "relative", width: "100%", height: "35%" }}
           />
         </aside>
-        <aside
-          className="border border-danger"
-          style={{ width: "30%", height: "110vh" }}
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam
-          architecto assumenda voluptatum quis veniam minus qui maxime eius
-          doloremque sed omnis est quae atque nesciunt eveniet voluptates unde
-          iusto enim soluta quam, eum ex! Harum, non maxime, cum esse aperiam
-          labore, quae explicabo iure consequuntur necessitatibus minima
-          corporis facilis.
+        <aside style={{ width: "30%", height: "110vh" }}>
+          <div className="mt-3">
+            <h5 className="text-start ms-3">
+              Coffee Delights: A Brew-tiful Journey
+            </h5>
+            <p className=" text-start ms-3">
+              Dive into the world of coffee delights! From selecting beans to
+              enjoying the perfect brew, this article explores the joy and
+              flavor in every cup. Whether you prefer a bold espresso or a
+              smooth latte, discover how coffee can brighten your day and make
+              every moment brew-tiful!
+            </p>
+          </div>
+          <div style={{ marginTop: "60px" }}>
+            <h5 className="text-start ms-3">Pedal to Happiness</h5>
+            <p className=" text-start ms-3">
+              Bike riding brings pure joy and freedom. Feel the wind in your
+              hair and enjoy the simple thrill of pedaling through scenic paths
+              or city streets. Each ride is a chance to escape, unwind, and
+              embrace happiness on two wheels!
+            </p>
+          </div>
+          <div style={{ marginTop: "60px" }}>
+            <h5 className="text-start ms-3">Understanding Climate Change</h5>
+            <p className=" text-start ms-3">
+              Climate change affects us all, altering weather patterns and
+              impacting ecosystems. This article explains the basics of climate
+              change, its causes, and its effects on our planet. Learn how these
+              changes are influencing our environment and what actions we can
+              take to make a difference.
+            </p>
+          </div>
         </aside>
       </section>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, nostrum
+        magni aliquid quibusdam culpa quaerat debitis sint magnam nemo sapiente
+        fugit esse doloremque pariatur, saepe expedita veniam nobis vel quam?
+      </div>
     </>
   );
 };

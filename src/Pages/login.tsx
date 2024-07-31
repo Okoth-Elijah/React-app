@@ -13,14 +13,7 @@ const Login = () => {
   };
 
   return (
-    <div
-      className="container bg-white mt-5 login-div"
-      style={{
-        height: "70vh",
-        borderRadius: "2px",
-        border: "2px solid lightGray",
-      }}
-    >
+    <div className="container d-flex justify-content-center bg-white mt-5 login-div">
       <img
         src={logo}
         alt="logo"
