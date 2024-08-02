@@ -2,11 +2,11 @@ import SubscribeForm from "../components/SubscribeForm";
 
 const FooterPage = () => {
   return (
-    <section className="mt-1 contact-container">
+    <section className="mt-1 contact-container ">
       <div className="d-flex flex-column justify-content-center">
-        <div className="fff rounded-1  " style={{ height: "20px" }}></div>
+        <div className="rounded-1  " style={{ height: "20px" }}></div>
         <div
-          className=" d-flex bg-secondary contanc-content"
+          className=" d-flex num contanc-content"
           style={{
             zIndex: "1",
             height: "15em",

@@ -41,7 +41,7 @@ const TrendingContent = () => {
       ))}
 
       <div className=" conatiner-fluid">
-        <h4 className="heading">Trending Articles</h4>
+        <h4 className="heading text-white">Trending Articles</h4>
         <div className=" d-flex  justify-content-between ">
           <div className="d-flex">
             <img
@@ -51,8 +51,9 @@ const TrendingContent = () => {
               style={{ width: "70px", height: "70px", borderRadius: "45px" }}
             />
             <div className=" my-2 " style={{ width: "14em" }}>
-              <h5 className="text-start">culture</h5>
+              <h5 className="text-start text-white">culture</h5>
               <p
+                className="text-light"
                 style={{
                   width: "17em",
                   lineHeight: "20px",
@@ -71,8 +72,9 @@ const TrendingContent = () => {
               style={{ width: "70px", height: "70px", borderRadius: "45px" }}
             />
             <div className=" my-2 " style={{ width: "14em" }}>
-              <h5 className="text-start ">Happyness</h5>
+              <h5 className="text-start text-white">Happyness</h5>
               <p
+                className="text-light"
                 style={{
                   width: "17em",
                   lineHeight: "20px",
@@ -91,8 +93,9 @@ const TrendingContent = () => {
               style={{ width: "70px", height: "70px", borderRadius: "45px" }}
             />
             <div className=" my-2 " style={{ width: "14em" }}>
-              <h5 className="text-start ">WorkForce Ecosystems</h5>
+              <h5 className="text-start text-white ">WorkForce Ecosystems</h5>
               <p
+                className="text-light"
                 style={{
                   width: "17em",
                   lineHeight: "20px",

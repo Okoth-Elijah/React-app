@@ -11,9 +11,9 @@ import security from "../assets/images/Security.jpeg";
 const Technology = () => {
   return (
     <section className="container-fluid " style={{ marginTop: "7em" }}>
-      <div className="row border d-flex justify-content-center">
+      <div className="row border d-flex justify-content-center ">
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -51,7 +51,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -89,7 +89,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -127,7 +127,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -165,7 +165,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -203,7 +203,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -241,7 +241,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -279,7 +279,7 @@ const Technology = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-3 justify-content-center "
+          className=" my-3 border border-4 ms-3 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5

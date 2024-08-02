@@ -13,7 +13,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-center bg-white mt-5 login-div">
+    <div className="container  d-flex justify-content-center bg-white mt-5 login-div">
       <img
         src={logo}
         alt="logo"

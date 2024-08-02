@@ -10,7 +10,6 @@ import Passwordverification from "./Pages/Passwordverification";
 import Profilepage from "./Pages/profilepage";
 import Homepage from "./Pages/homepage";
 import CreatePassword from "./components/CreatePassword";
-import FuturedArticles from "./Pages/FuturedArticles";
 import Technology from "./components/Technology";
 import HealthAndWellness from "./components/HealthAndWellness";
 import Lifestyle from "./components/Lifestyle";
@@ -34,7 +33,6 @@ function App() {
       <Route path="/forgotpassword" element={<Forgotpassword />} />
       <Route path="/register" element={<Register />} />
       <Route path="/createpassword" element={<CreatePassword />} />
-      <Route path="futuredarticles" element={<FuturedArticles />} />
       <Route path="profilepage" element={<Profilepage />} />
 
       <Route path="/articles/*" element={<MainLayout />}>

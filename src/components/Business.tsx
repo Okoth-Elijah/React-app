@@ -16,7 +16,7 @@ const Business = () => {
         style={{ marginTop: "90px", width: "100%", position: "relative" }}
       >
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -54,7 +54,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white"
           style={{ width: "300px" }}
         >
           <h5
@@ -92,7 +92,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -130,7 +130,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -168,7 +168,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -206,7 +206,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -244,7 +244,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5
@@ -282,7 +282,7 @@ const Business = () => {
           </div>
         </div>
         <div
-          className=" my-3 border border-4 ms-4 justify-content-center "
+          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
           style={{ width: "300px" }}
         >
           <h5

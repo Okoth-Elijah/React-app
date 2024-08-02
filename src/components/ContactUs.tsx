@@ -1,7 +1,7 @@
 const ContactUs = () => {
   return (
-    <section className="vvvv d-flex justify-content-center flex-column py-3 mt-5">
-      <div className="heading-container d-flex flex-column mt-5">
+    <section className="vvvv   pt-3 mt-5">
+      <div className="heading-container mt-5">
         <h5 className="contact-heading fs-2 text-center">Get in Touch</h5>
         <p
           className="text-center text-light text-wrap "
@@ -16,48 +16,49 @@ const ContactUs = () => {
           your input and will respond as soon as possible.
         </p>
       </div>
-      <div className="row contact-body py-5 px-5 mt-5 border border-danger ">
+      <div className="contact-body py-5 px-5 mt-5 ">
         <div
-          className="col contact-content border border-danger d-flex justify-content-between "
+          className="col contact-content  d-flex justify-content-between "
           style={{ position: "static" }}
         >
           <div
-            className="content-1 d-flex flex-column bg-white justify-content-center rounded-1  border border-success my-3  border-3"
+            className="content-1 d-flex flex-column bg-white  card-2 justify-content-center rounded-1  my-3"
             style={{ width: "20em", height: "25em" }}
           >
             <div className="contact-icon mb-5">
               <i className="fi fi-ss-circle-phone-hangup fs-1 d-flex justify-content-center"></i>
             </div>
             <h6 className=" text-center p1 fs-4">Call Us Now</h6>
-            <p className=" text-center fs-6">
+            <p className=" text-center fs-6 mx-3">
               Need help? Call us now for quick and friendly support. Our team is
               ready to assist with any questions or concerns you have. We're
               here to ensure you get the best service!
             </p>
           </div>
           <div
-            className="content-1 d-flex flex-column bg-white justify-content-center rounded-1  border border-success my-3  border-3"
+            className="content-1 d-flex flex-column card-2 bg-white justify-content-center rounded-1  my-3"
             style={{ width: "20em", height: "25em" }}
           >
             <div className="contact-icon mb-5">
               <i className="fi fi-ss-envelopes fs-1 d-flex justify-content-center"></i>
             </div>
-            <h6 className=" text-center p1 fs-4">Call Us Now</h6>
-            <p className=" text-center fs-6">
-              Need help? Call us now for quick and friendly support. Our team is
-              ready to assist with any questions or concerns you have. We're
-              here to ensure you get the best service!
+            <h6 className=" text-center p1 fs-4">Email Adress</h6>
+            <p className=" text-center fs-6 mx-3">
+              Have questions or need support? Email us at [
+              <em>articleavenue@gmail.com</em>]. Our team is ready to assist
+              with any inquiries or concerns. We look forward to hearing from
+              you!
             </p>
           </div>
           <div
-            className="content-1 d-flex flex-column bg-white justify-content-center rounded-1  border border-success my-3  border-3"
+            className="content-1 d-flex flex-column card-2 bg-white justify-content-center rounded-1  my-3"
             style={{ width: "20em", height: "25em" }}
           >
             <div className="contact-icon mb-5">
               <i className="fi fi-sr-land-layer-location fs-1 d-flex justify-content-center"></i>
             </div>
-            <h6 className=" text-center p1 fs-4">Call Us Now</h6>
-            <p className=" text-center fs-6">
+            <h6 className=" text-center p1 fs-4">Location</h6>
+            <p className=" text-center fs-6 mx-3">
               Need help? Call us now for quick and friendly support. Our team is
               ready to assist with any questions or concerns you have. We're
               here to ensure you get the best service!

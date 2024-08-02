@@ -2,31 +2,32 @@ import biotechnology from "../assets/images/biotechnology.jpeg";
 import coffee from "../assets/images/coffee.jpeg";
 import climate from "../assets/images/climate.jpeg";
 import Bike from "../assets/images/Bike.jpeg";
+import TopArticles from "./TopArticles";
 
 const Content = () => {
   return (
     <>
       <div className="d-flex justify-content-between ">
         <span>
-          <h5>Allcategories</h5>
+          <h5 className=" h5-title">Allcategories</h5>
         </span>
         <span>
-          <h5>News</h5>
+          <h5 className=" h5-title">News</h5>
         </span>
         <span>
-          <h5>Personal Advice</h5>
+          <h5 className=" h5-title">Personal Advice</h5>
         </span>
         <span>
-          <h5>Self-Development</h5>
+          <h5 className=" h5-title">Self-Development</h5>
         </span>
         <span>
-          <h5>Travel</h5>
+          <h5 className=" h5-title">Travel</h5>
         </span>
         <span>
-          <h5>Funny situations</h5>
+          <h5 className=" h5-title">Funny situations</h5>
         </span>
         <span>
-          <h5>Natural</h5>
+          <h5 className=" h5-title">Natural</h5>
         </span>
       </div>
       <section className=" px-3 py-2 mb-5 mt-5 d-flex gap-3">
@@ -67,10 +68,10 @@ const Content = () => {
         </aside>
         <aside style={{ width: "30%", height: "110vh" }}>
           <div className="mt-3">
-            <h5 className="text-start ms-3">
+            <h5 className="text-start text-light ms-3">
               Coffee Delights: A Brew-tiful Journey
             </h5>
-            <p className=" text-start ms-3">
+            <p className=" text-start text-light ms-3">
               Dive into the world of coffee delights! From selecting beans to
               enjoying the perfect brew, this article explores the joy and
               flavor in every cup. Whether you prefer a bold espresso or a
@@ -79,8 +80,8 @@ const Content = () => {
             </p>
           </div>
           <div style={{ marginTop: "60px" }}>
-            <h5 className="text-start ms-3">Pedal to Happiness</h5>
-            <p className=" text-start ms-3">
+            <h5 className="text-start text-light ms-3">Pedal to Happiness</h5>
+            <p className=" text-start text-light ms-3">
               Bike riding brings pure joy and freedom. Feel the wind in your
               hair and enjoy the simple thrill of pedaling through scenic paths
               or city streets. Each ride is a chance to escape, unwind, and
@@ -88,8 +89,10 @@ const Content = () => {
             </p>
           </div>
           <div style={{ marginTop: "60px" }}>
-            <h5 className="text-start ms-3">Understanding Climate Change</h5>
-            <p className=" text-start ms-3">
+            <h5 className="text-start text-light ms-3">
+              Understanding Climate Change
+            </h5>
+            <p className=" text-start text-light ms-3">
               Climate change affects us all, altering weather patterns and
               impacting ecosystems. This article explains the basics of climate
               change, its causes, and its effects on our planet. Learn how these
@@ -100,9 +103,7 @@ const Content = () => {
         </aside>
       </section>
       <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, nostrum
-        magni aliquid quibusdam culpa quaerat debitis sint magnam nemo sapiente
-        fugit esse doloremque pariatur, saepe expedita veniam nobis vel quam?
+        <TopArticles />
       </div>
     </>
   );
