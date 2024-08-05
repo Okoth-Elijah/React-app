@@ -4,16 +4,16 @@ import avatar from "../assets/images/avatar.jpeg";
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary nav-style"
+      className="navbar navbar-expand-lg  bg-body-tertiary nav-style"
       style={{
-        position: "fixed",
+        position: "absolute",
         top: "0",
         width: "100%",
         zIndex: "1000",
       }}
     >
       <div className="container-fluid ">
-        <Link className="navbar-brand" to="/articles/home">
+        <Link className="navbar-brand nav-nn" to="/articles/home">
           Article <span className="text-warning">Avenue</span>
         </Link>
         <button
@@ -31,7 +31,7 @@ const Navbar = () => {
           className="collapse navbar-collapse px-3 py-3  ps-5  good"
           id="navbarScroll"
         >
-          <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <ul className="navbar-nav me-auto d-flex justify-content-center my-2 my-lg-0 navbar-nav-scroll">
             <li className="nav-item">
               <Link
                 className="nav-link active"
@@ -178,16 +178,16 @@ const Navbar = () => {
             }}
             role="search"
           >
-            <div className="search-bar d-flex">
+            <div className="search-bar d-flex search">
               <input
-                className="form-control me-2"
+                className="form-control rounded-0  "
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
                 style={{ height: "40px" }}
               />
               <button
-                className="btn btn-outline-success"
+                className="btn btn-outline-success rounded-0"
                 type="submit"
                 style={{ height: "40px" }}
               >

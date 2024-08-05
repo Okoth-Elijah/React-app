@@ -9,7 +9,6 @@ const Homepage = () => {
       <Navbar />
       <div className="homepage" style={{ marginTop: "7em" }}>
         <Herosection />
-
         <div className="mx-auto px-5 ">
           <div className="row background py-2"></div>
           <TrendingContent />
