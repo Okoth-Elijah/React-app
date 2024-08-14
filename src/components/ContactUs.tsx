@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <section className="vvvv   pt-3 mt-5">
+    <section className="vvvv pt-3 mt-5">
       <div className="heading-container mt-5">
         <h5 className="contact-heading fs-2 text-center">Get in Touch</h5>
         <p

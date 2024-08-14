@@ -13,7 +13,7 @@ const Login = () => {
   };
 
   return (
-    <div className="row">
+    <div>
       <div
         className="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center"
         style={{ position: "relative" }}

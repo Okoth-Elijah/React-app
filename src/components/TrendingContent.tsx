@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import culture from "../assets/images/culture.jpeg";
 import climate from "../assets/images/climate.jpeg";
 import Bike from "../assets/images/Bike.jpeg";
@@ -40,7 +41,10 @@ const TrendingContent = () => {
         </div>
       ))}
 
-      <div className=" conatiner-fluid">
+      <div
+        className=" conatiner-fluid trending-container"
+        style={{ position: "relative" }}
+      >
         <h4 className="heading text-white">Trending Articles</h4>
         <div className=" d-flex  justify-content-between ">
           <div className="d-flex">

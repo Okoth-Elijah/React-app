@@ -4,15 +4,18 @@ import back from "../assets/images/back.jpeg";
 const Herosection = () => {
   return (
     <div className="d-flex flex-column hero-col ">
-      <div className="d-flex justify-content-center align-items-center gap-3 pt-3">
-        <h2 className="heading ">
+      <div
+        className="d-flex justify-content-center align-items-center gap-3 pt-3"
+        style={{ position: "inherit" }}
+      >
+        <h2 className="heading">
           Welcome to Article Avenue your - Your Destination for insightful
           Articles!
         </h2>
         <img
           src={logo}
           alt=""
-          className="img-fluid"
+          className="img-fluid img-1 border border-danger"
           style={{
             width: "70px",
             height: "70px",
@@ -31,6 +34,7 @@ const Herosection = () => {
         <img
           src={back}
           alt="futured image"
+          className="img-2 "
           style={{
             width: "300px",
             height: " 240px",

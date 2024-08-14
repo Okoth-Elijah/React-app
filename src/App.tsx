@@ -24,6 +24,7 @@ import { Culture } from "./components/Culture";
 import Enviroment from "./components/Enviroment";
 import Automotive from "./components/Automotive";
 import ContactUs from "./components/ContactUs";
+import ReadContent from "./components/ReadContent";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/createpassword" element={<CreatePassword />} />
       <Route path="profilepage" element={<Profilepage />} />
+      <Route path="readcontent" element={<ReadContent />} />
 
       <Route path="/articles/*" element={<MainLayout />}>
         <Route path="home" element={<Homepage />} />

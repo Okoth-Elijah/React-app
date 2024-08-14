@@ -3,13 +3,32 @@ import coffee from "../assets/images/coffee.jpeg";
 import climate from "../assets/images/climate.jpeg";
 import Bike from "../assets/images/Bike.jpeg";
 import TopArticles from "./TopArticles";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Content = () => {
+  const [products, setProducts] = useState<any>([]);
+
+  const getAllProducts = () => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((res) => {
+        setProducts(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getAllProducts();
+  }, [products]);
+
   return (
     <>
-      <div className="d-flex justify-content-between ">
+      <div className=" d-flex justify-content-between  content-a ">
         <span>
-          <h5 className=" h5-title">Allcategories</h5>
+          <h5 className=" h5-title">All </h5>
         </span>
         <span>
           <h5 className=" h5-title">News</h5>

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import avatar from "../assets/images/avatar.jpeg";
+import ProfileDropdown from "./ProfileDropdown";
 
 const Navbar = () => {
   return (
     <nav
-      className="navbar navbar-expand-lg  bg-body-tertiary nav-style"
+      className="navbar navbar-expand-lg bg-body-tertiary nav-style"
       style={{
         position: "absolute",
         top: "0",
@@ -195,23 +195,7 @@ const Navbar = () => {
               </button>
             </div>
           </form>
-          <div className="proflie">
-            <Link to="#">
-              <img
-                src={avatar}
-                alt="Profile"
-                className="profile-image"
-                style={{
-                  width: "50px",
-                  height: "50px",
-                  borderRadius: "25px",
-                  boxShadow: " 0px 1px 5px gray",
-                  opacity: "8",
-                  transition: "boxshadow easein",
-                }}
-              />
-            </Link>
-          </div>
+          <ProfileDropdown />
         </div>
       </div>
     </nav>
