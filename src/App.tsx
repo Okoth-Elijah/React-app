@@ -35,9 +35,9 @@ function App() {
       <Route path="/register" element={<Register />} />
       <Route path="/createpassword" element={<CreatePassword />} />
       <Route path="profilepage" element={<Profilepage />} />
-      <Route path="readcontent" element={<ReadContent />} />
 
       <Route path="/articles/*" element={<MainLayout />}>
+        <Route index element={<Homepage />} />
         <Route path="home" element={<Homepage />} />
         <Route path="profilepage" element={<Profilepage />} />
         <Route path="aboutus" element={<Aboutus />} />
@@ -60,6 +60,7 @@ function App() {
         <Route path="environment" element={<Enviroment />} />
         <Route path="automotive" element={<Automotive />} />
         <Route path="contactus" element={<ContactUs />} />
+        <Route path="readcontent/:product_id" element={<ReadContent />} />
       </Route>
 
       <Route path="/*" element={<Login />} />

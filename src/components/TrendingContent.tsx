@@ -2,45 +2,10 @@
 import culture from "../assets/images/culture.jpeg";
 import climate from "../assets/images/climate.jpeg";
 import Bike from "../assets/images/Bike.jpeg";
-import axios from "axios";
-import { useEffect, useState } from "react";
-
-type myData = {
-  class_id: number;
-  class_name: string;
-  syllabus: string;
-  capacity: number;
-};
 
 const TrendingContent = () => {
-  const [data, setData] = useState<any[]>([]);
-
-  const quote = () => {
-    axios
-      .get("http://192.168.100.130:3100/classes")
-      .then((res) => {
-        setData(res.data.data);
-        console.log(res.data.message, res.data.number_of_classes);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
-  useEffect(() => {
-    quote();
-  }, []);
-
   return (
     <>
-      {data.map((x: myData, index: number) => (
-        <div key={index} className=" d-flex gap-3">
-          <span>{x.class_name}</span>
-          <span> {x.syllabus}</span>
-          <span> {x.capacity}</span>
-        </div>
-      ))}
-
       <div
         className=" conatiner-fluid trending-container"
         style={{ position: "relative" }}

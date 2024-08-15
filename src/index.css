@@ -641,6 +641,7 @@ div .linksection span a:hover {
   border-bottom: 7px solid rgb(248, 114, 4);
   width: 85%;
   margin: 0 auto;
+  margin-top: 6rem;
 }
 
 .aurthor-information {
@@ -648,14 +649,15 @@ div .linksection span a:hover {
   margin: 0 auto;
 
   .heading-t {
-    font-size: 4.5em;
-    width: 10em;
+    font-size: 4em;
+    width: 11.5em;
   }
 }
 
 .stunning-image {
   width: 25em;
   height: 20em;
+  margin-left: 0.8em;
   object-fit: cover;
   object-position: center;
 }
@@ -663,7 +665,6 @@ div .linksection span a:hover {
 .social-links {
   width: 15rem;
 }
-
 .social-links i.h:hover {
   color: #e1306c;
 }
@@ -682,14 +683,13 @@ div .linksection span a:hover {
 
 .verticle-one {
   width: 85%;
-  height: 100vh;
+  height: 110vh;
   margin-left: 7.5%;
   position: relative;
 }
 
 .verticle-one .vert-3 {
-  border: 2px solid green;
-  width: 50%;
+  width: 40%;
   img {
     width: 20em;
     height: 15em;
@@ -702,4 +702,95 @@ div .linksection span a:hover {
 .verticle-two {
   width: 70%;
 }
+
+.plans-image {
+  width: 10em;
+  height: 10em;
+  z-index: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 37%;
+  position: absolute;
+  top: 5;
+}
+
+.float-right {
+  display: flex;
+  float: right;
+  width: 21rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+  z-index: 100;
+  margin-left: 50%;
+  position: sticky;
+  position: sticky;
+  margin-top: -70px;
+}
+
+.other-centent {
+  z-index: 100;
+  margin-top: -6rem;
+}
+
+.lorem {
+  z-index: 100;
+  margin-left: 50%;
+  margin-top: -30em;
+}
+
+.float-img {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.float-img-2 {
+  width: 20rem;
+  margin-top: -0.5em;
+  height: 10.3rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.social-linkz {
+  /* border: 2px solid green; */
+  width: 85%;
+  margin: 0 auto;
+}
+
+.comment-form {
+  width: 21rem;
+  height: 3.5rem;
+  background: url("https://i.pinimg.com/564x/52/4a/0a/524a0a622002706229b77c02ea164963.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  input {
+    height: 3rem;
+    outline: inset;
+  }
+
+  button {
+    height: 3.3rem;
+    background-color: #ff4500;
+    border: none;
+    width: 6.5rem;
+    border-radius: 0.2rem;
+  }
+}
+
+.description {
+  width: 26rem;
+  /* border: 2px solid green; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 3;
+}
+
 /* read content end */

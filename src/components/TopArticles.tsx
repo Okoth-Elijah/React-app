@@ -62,7 +62,7 @@ const TopArticles = () => {
             </div>
             <div>
               <Link
-                to="#"
+                to={`readcontent/${product.id}`}
                 className="btn btn-primary rounded-1 w-50 mb-2 "
                 style={{ marginLeft: "23%" }}
               >
