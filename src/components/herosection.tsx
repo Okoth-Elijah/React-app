@@ -1,17 +1,32 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import logo from "../assets/images/logo.png";
-import back from "../assets/images/back.jpeg";
+// import back from "../assets/images/back.jpeg";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const Herosection = () => {
+  const [products, setProducts] = useState<any>([]);
+
+  const getProducts = () => {
+    axios
+      .get("https://fakestoreapi.com/products/9")
+      .then((res) => {
+        setProducts(res.data);
+      })
+      .catch((err) => console.log(`You'v got an error: ${err}`));
+  };
+
+  useEffect(() => {
+    getProducts();
+  });
+
   return (
     <div className="d-flex flex-column hero-col ">
       <div
         className="d-flex justify-content-center align-items-center gap-3 pt-3"
         style={{ position: "inherit" }}
       >
-        <h2 className="heading">
-          Welcome to Article Avenue your - Your Destination for insightful
-          Articles!
-        </h2>
+        <h2 className="heading">{products.title}</h2>
         <img
           src={logo}
           alt=""
@@ -32,7 +47,7 @@ const Herosection = () => {
       </p>
       <div className="descip-container   px-5 d-flex gap-5 justify-content-center align-items-center flex-wrap">
         <img
-          src={back}
+          src={products.image}
           alt="futured image"
           className="img-2 "
           style={{
@@ -48,9 +63,7 @@ const Herosection = () => {
         <div className="col-5">
           <div className="hero-description">
             <p className="description-para  text-center d-flex mb-5">
-              Discover high-quality, well-researched articles on technology,
-              health, business, entertainment, and more. Stay informed and
-              inspired with Article Avenue.
+              {products.description}
             </p>
           </div>
           <div className="buttons-links d-flex justify-content-center">
