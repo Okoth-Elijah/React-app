@@ -1,13 +1,49 @@
 import { Link } from "react-router-dom";
 import profi from "../assets/images/profi.jpeg";
+import NextContent from "../components/NextContent";
 
 const Profilepage = () => {
   return (
-    <section className=" border border-danger bg-info d-flex">
+    <section className=" bg-light d-flex">
       <div className="profile-section  bg-primary">
-        <h4 className="text-center text-white fs-3 mt-3">Success</h4>
+        <h4 className="text-center text-white fs-3 mt-3">Profile Page</h4>
+        <div className=" py-1 gap-3 d-flex profi-sb">
+          <img className="profi-1 ms-4" src={profi} alt="Profile Image" />
+          <h5 className="my-auto text-warning">Wander Lilly</h5>
+        </div>
+        <div className="text-light mx-auto d-flex h-50 flex-column profi-info px-2 mt-2">
+          <h6>Statistics</h6>
+          <h6>Book Marks</h6>
+          <h6>Notifications </h6>
+          <h6>Contributions</h6>
+          <h6>Edit Profile</h6>
+        </div>
+
+        {/* From Uiverse.io by Nawsome  */}
+        <div
+          aria-label="Orange and tan hamster running in a metal wheel"
+          role="img"
+          className="wheel-and-hamster mx-auto mt-2"
+        >
+          <div className="wheel"></div>
+          <div className="hamster">
+            <div className="hamster__body">
+              <div className="hamster__head">
+                <div className="hamster__ear"></div>
+                <div className="hamster__eye"></div>
+                <div className="hamster__nose"></div>
+              </div>
+              <div className="hamster__limb hamster__limb--fr"></div>
+              <div className="hamster__limb hamster__limb--fl"></div>
+              <div className="hamster__limb hamster__limb--br"></div>
+              <div className="hamster__limb hamster__limb--bl"></div>
+              <div className="hamster__tail"></div>
+            </div>
+          </div>
+          <div className="spoke"></div>
+        </div>
       </div>
-      <div className="border border-muted border-2 profile-container-5 d-flex flex-column mx-auto">
+      <div className="  d-flex flex-column mx-auto  pro-page-container">
         <nav className="navbar bg-body-tertiary profile-navbar">
           <div className="container-fluid">
             <a className="navbar-brand">Profile Page</a>
@@ -33,10 +69,10 @@ const Profilepage = () => {
             </div>
           </div>
         </nav>
-        <section className="mt-4 bg-white  py-3">
+        <section className="mt2 bg-white  py-3">
           <div className="d-flex">
             <div className="bg-white img-fluid d-flex rounded justify-content-between py-2 px-2 mx-3 profile-img-4-container ">
-              <img src={profi} alt="profile-image" />
+              <img src={profi} className="me-4" alt="profile-image" />
               <div className=" lh-1 ">
                 <h4>Wander lilly</h4>
                 <p>
@@ -127,7 +163,7 @@ const Profilepage = () => {
                 style={{ cursor: "pointer" }}
               ></i>
             </div>
-            <div className="container-5 d-flex flex-column justify-content-center ps-2 ">
+            <div className="container-5 rounded d-flex flex-column justify-content-center ps-2 ">
               <h5 className="text-center ">Achievements</h5>
               <p>
                 <span className="text-primary fw-bold">
@@ -156,6 +192,7 @@ const Profilepage = () => {
             </div>
           </div>
         </section>
+        <NextContent />
       </div>
     </section>
   );
