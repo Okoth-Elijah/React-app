@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import stunning from "../assets/images/Stunning .jpeg";
 import kg from "../assets/images/kg.jpeg";
 import hg from "../assets/images/hg.jpeg";
@@ -11,11 +12,18 @@ import axios from "axios";
 const ReadContent = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [products, setProducts] = useState<any>([]);
-  const { product_id } = useParams();
+  // const { product_id } = useParams();
+
+  const [input, setInput] = useState("");
+
+  const comment = (e: any) => {
+    e.preventDefault();
+    console.log(input);
+  };
 
   const getProducts = () => {
     axios
-      .get(`https://fakestoreapi.com/products/${product_id}`)
+      .get(`https://fakestoreapi.com/products/7`)
       .then((res) => {
         setProducts(res.data);
         console.log(res.data);
@@ -27,7 +35,7 @@ const ReadContent = () => {
 
   useEffect(() => {
     getProducts();
-  }, [product_id]);
+  }, [products]);
 
   return (
     <>
@@ -80,7 +88,7 @@ const ReadContent = () => {
               ${products.price}
             </p>
             <h5 className="text-white fw-normal" style={{ marginTop: "-15px" }}>
-              Rating ;{" "}
+              Rating:
             </h5>
             <div>
               <i className="fi fi-ts-star-sharp-half-stroke"></i>
@@ -186,11 +194,12 @@ const ReadContent = () => {
         >
           <input
             type="text"
+            onChange={(e) => setInput(e.target.value)}
             title=""
             placeholder=" comment here...."
             required
           />
-          <button className="" type="submit">
+          <button className="" onClick={comment} type="submit">
             Comment
           </button>
         </form>

@@ -38,23 +38,17 @@ const TopArticles = () => {
           readers like you!
         </p>
       </div>
-      <div className="w-100 d-flex flex-wrap top-content floating gap-2 ">
+      <div className=" d-flex flex-wrap justify-content-between gap-2 top-content floating  ">
         {products.map((product: any) => (
           <div
             key={product.id}
-            className="col-12 col-sm-3 story-content bg-white d-flex flex-column rounded-1"
+            className=" story-content bg-white d-flex flex-column rounded-1"
             style={{ position: "relative" }}
           >
             <img
               className="img-fluid img-thumbnail tech-2 mb-2 mx-auto"
               src={product.image}
               alt="image"
-              style={{
-                width: "18em",
-                height: "20em",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
             />
             <div className="d-flex flex-column">
               <h4 className="text-center futured-title">{product.title}</h4>

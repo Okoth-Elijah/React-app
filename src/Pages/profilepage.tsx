@@ -4,19 +4,69 @@ import NextContent from "../components/NextContent";
 
 const Profilepage = () => {
   return (
-    <section className=" bg-light d-flex">
+    <section className="profile-page-color d-flex">
       <div className="profile-section  bg-primary">
         <h4 className="text-center text-white fs-3 mt-3">Profile Page</h4>
         <div className=" py-1 gap-3 d-flex profi-sb">
           <img className="profi-1 ms-4" src={profi} alt="Profile Image" />
           <h5 className="my-auto text-warning">Wander Lilly</h5>
         </div>
-        <div className="text-light mx-auto d-flex h-50 flex-column profi-info px-2 mt-2">
-          <h6>Statistics</h6>
-          <h6>Book Marks</h6>
-          <h6>Notifications </h6>
-          <h6>Contributions</h6>
-          <h6>Edit Profile</h6>
+        <div className="  text-light mx-auto d-flex h-50 flex-column profi-info px-2 pt-4 mt-2 ">
+          <div className="d-flex">
+            <h6 className="mb-5 profi-con  px-2">Statistics : </h6>
+            <i
+              className="fi fi-rs-arrow-left-to-arc fs-5 fw-bold text-warning "
+              style={{
+                marginLeft: "6.6em",
+                transform: "scaleX(-1)",
+                filter: "blur(1px)",
+              }}
+            ></i>
+          </div>
+          <div className="d-flex">
+            <h6 className="mb-5 profi-con px-2">Book Marks : </h6>
+            <i
+              className="fi fi-rs-arrow-left-to-arc fs-5 fw-bold text-warning "
+              style={{
+                marginLeft: "6.6em",
+                transform: "scaleX(-1)",
+                filter: "blur(1px)",
+              }}
+            ></i>
+          </div>
+          <div className="d-flex">
+            <h6 className="mb-5 profi-con  px-2">Notifications : </h6>
+            <i
+              className="fi fi-rs-arrow-left-to-arc fs-5 fw-bold text-warning "
+              style={{
+                marginLeft: "6.6em",
+                transform: "scaleX(-1)",
+                filter: "blur(1px)",
+              }}
+            ></i>
+          </div>
+          <div className="d-flex">
+            <h6 className="mb-5 profi-con px-2">Contributions : </h6>
+            <i
+              className="fi fi-rs-arrow-left-to-arc fs-5 fw-bold text-warning "
+              style={{
+                marginLeft: "6.6em",
+                transform: "scaleX(-1)",
+                filter: "blur(1px)",
+              }}
+            ></i>
+          </div>
+          <div className="d-flex">
+            <h6 className="mb-5 profi-con  px-2">Edit Profile : </h6>
+            <i
+              className="fi fi-rs-arrow-left-to-arc fs-5 fw-bold text-warning "
+              style={{
+                marginLeft: "6.6em",
+                transform: "scaleX(-1)",
+                filter: "blur(1px)",
+              }}
+            ></i>
+          </div>
         </div>
 
         {/* From Uiverse.io by Nawsome  */}
@@ -43,7 +93,7 @@ const Profilepage = () => {
           <div className="spoke"></div>
         </div>
       </div>
-      <div className="  d-flex flex-column mx-auto  pro-page-container">
+      <div className=" d-flex flex-column mx-auto  pro-page-container">
         <nav className="navbar bg-body-tertiary profile-navbar">
           <div className="container-fluid">
             <a className="navbar-brand">Profile Page</a>
@@ -62,18 +112,27 @@ const Profilepage = () => {
                 Search
               </button>
             </form>
-            <div className=" me-3 text-danger" style={{ cursor: "pointer" }}>
-              <button type="button" className="btn btn-danger icon-btn">
-                <i className="fi fi-rs-portal-exit fs-3 "></i>...
+            <div className=" me-3 ms-5" style={{ cursor: "pointer" }}>
+              <button type="button" className="btn btn-danger  icon-btn">
+                <i
+                  className="fi fi-rs-portal-exit fs-3 d-flex  "
+                  style={{
+                    position: "sticky",
+                    top: "3px",
+                    bottom: "3px",
+                    left: "3px",
+                  }}
+                ></i>
+                ...
               </button>
             </div>
           </div>
         </nav>
-        <section className="mt2 bg-white  py-3">
+        <section className=" bg-white py-3">
           <div className="d-flex">
             <div className="bg-white img-fluid d-flex rounded justify-content-between py-2 px-2 mx-3 profile-img-4-container ">
               <img src={profi} className="me-4" alt="profile-image" />
-              <div className=" lh-1 ">
+              <div className=" lh-1">
                 <h4>Wander lilly</h4>
                 <p>
                   <span className="text-primary fw-bold me-3">

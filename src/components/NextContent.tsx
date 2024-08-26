@@ -1,12 +1,12 @@
 const NextContent = () => {
   return (
-    <div className="bg-light mx-1 border  lh-1 text-light rounded px-2 py-2  d-flex justify-content-between  flex-wrap">
+    <div className=" mx-1 border  lh-1 text-light rounded px-2 py-2  d-flex justify-content-between  flex-wrap">
       <div>
         <div
-          className=" bg-warning rounded px-1 py-1 mb-2 comments-part"
+          className=" bg-warning rounded px-1 py-1 mb-2 "
           style={{ width: "100%" }}
         >
-          <ul className="content-list rounded my-auto d-flex ">
+          <ul className="content-list rounded my-auto d-flex comments-part-1">
             <li>
               <div className="ul-list lh-1">
                 <h4> Hellow World</h4>
@@ -26,10 +26,10 @@ const NextContent = () => {
           </ul>
         </div>
         <div
-          className=" bg-warning rounded px-1 py-1 mb-2 comments-part"
+          className=" bg-warning rounded px-1 py-1 mb-2 "
           style={{ width: "100%" }}
         >
-          <ul className="content-list rounded my-auto d-flex ">
+          <ul className="content-list rounded my-auto d-flex comments-part-1">
             <li>
               <div className="ul-list lh-1">
                 <h4> Hellow World</h4>
@@ -49,10 +49,10 @@ const NextContent = () => {
           </ul>
         </div>
         <div
-          className=" bg-warning rounded px-1 py-1 comments-part"
+          className=" bg-warning rounded px-1 py-1 "
           style={{ width: "100%" }}
         >
-          <ul className="content-list rounded my-auto d-flex ">
+          <ul className="content-list rounded my-auto d-flex comments-part-1">
             <li>
               <div className="ul-list lh-1">
                 <h4> Hellow World</h4>

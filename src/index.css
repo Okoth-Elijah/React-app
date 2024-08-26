@@ -216,6 +216,29 @@ div .login-div {
 
 /* navbar end */
 
+/* top-content-start */
+.tech-2 {
+  /* border: 2px solid red; */
+  object-fit: cover;
+  object-position: center;
+  width: 17em;
+  height: 20em;
+}
+
+.top-content {
+  width: 100%;
+
+  .story-content {
+    width: 19em;
+    transition: box-shadow ease 0.5s;
+  }
+
+  .story-content:hover {
+    box-shadow: 3px 2px 15px rgb(240, 182, 25);
+  }
+}
+/* top-content-end */
+
 /* hero section-start */
 .hero-col {
   background-color: white;
@@ -456,7 +479,6 @@ div .linksection span a:hover {
 
 .contact-container {
   background-color: rgb(255, 166, 0);
-  /* border-bottom: 2px linear-gradient(to bottom, #ff7e5f, #feb47b); */
 }
 
 .num {
@@ -470,7 +492,6 @@ div .linksection span a:hover {
 
 .vvvv {
   background-color: rgb(66, 66, 66);
-  border: 2px solid red;
 }
 
 .contact-body {
@@ -616,7 +637,6 @@ div .linksection span a:hover {
 
 @media only screen and (width <= 600px) {
   .trending-container {
-    border: 2px solid red;
     font-size: small;
     position: relative;
     overflow: scroll;
@@ -631,6 +651,15 @@ div .linksection span a:hover {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 3;
+}
+
+.product-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   line-clamp: 3;
 }
 
@@ -754,7 +783,6 @@ div .linksection span a:hover {
 }
 
 .social-linkz {
-  /* border: 2px solid green; */
   width: 85%;
   margin: 0 auto;
 }
@@ -784,7 +812,6 @@ div .linksection span a:hover {
 
 .description {
   width: 26rem;
-  /* border: 2px solid green; */
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
@@ -795,9 +822,20 @@ div .linksection span a:hover {
 
 /* read content end */
 
+/* comments-part-start */
+
+.comments-part-1 {
+  transition: box-shadow 0.5s ease;
+}
+
+.comments-part-1:hover {
+  box-shadow: 2px 3px 15px rgb(120, 153, 127);
+}
+
+/* comments-part-end */
+
 /* profile-navbar start */
 .profile-navbar {
-  /* border: 2px solid green; */
   width: 100%;
   height: 5rem;
   border-bottom-left-radius: 2em;
@@ -805,23 +843,38 @@ div .linksection span a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: border ease 0.1s;
+}
+
+.profile-navbar:hover {
+  border: 2px solid rgb(89, 107, 89);
+}
+
+.profile-page-color {
+  background-color: rgb(5, 5, 78);
 }
 
 .pro-page-container {
-  border-left: 2px solid rgb(250, 201, 111);
-  border-right: 2px solid rgb(250, 201, 111);
+  background-color: white;
+  border-left: 2px solid rgb(253, 118, 64);
+  border-right: 2px solid rgb(253, 118, 64);
 }
 
 .profile-section {
   border: 2px solid yellow;
-  box-shadow: 3px 05px 17px rgb(131, 128, 128);
-  width: 27%;
+  border-top: none;
+  width: 23%;
   height: 100vh;
   border-start-end-radius: 20px;
   position: sticky;
   left: 0;
   top: 0;
   bottom: 0;
+  transition: box-shadow ease-out 0.3s;
+}
+
+.profile-section:hover {
+  box-shadow: 2px 2px 5px rgb(131, 128, 128);
 }
 
 .icon-btn {
@@ -882,7 +935,7 @@ div .linksection span a:hover {
 }
 
 .side-info {
-  border: 2px solid red;
+  border: 2px solid rgb(250, 201, 111);
   width: 13em;
   height: 17em;
 
@@ -1406,7 +1459,7 @@ div .linksection span a:hover {
     transform: rotate(-1turn);
   }
 }
-
+/* proffi-start */
 .profi-1 {
   object-fit: cover;
   object-position: center;
@@ -1422,4 +1475,18 @@ div .linksection span a:hover {
 
 .profi-info {
   box-shadow: 0px -2px 15px rgb(168, 180, 144);
+}
+
+.profi-con {
+  width: 8em;
+  border-end-end-radius: 1em;
+  border-top-right-radius: 1em;
+  transition: background, ease 1.5s;
+}
+
+.profi-con:hover {
+  background: #f1e7e7;
+  color: rgb(56, 54, 54);
+  cursor: pointer;
+  box-shadow: 1px 3px 5px rgb(226, 138, 5);
 }

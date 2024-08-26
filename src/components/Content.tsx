@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import biotechnology from "../assets/images/biotechnology.jpeg";
 import coffee from "../assets/images/coffee.jpeg";
 import climate from "../assets/images/climate.jpeg";
