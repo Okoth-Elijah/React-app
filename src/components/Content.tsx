@@ -27,7 +27,7 @@ const Content = () => {
 
   return (
     <>
-      <div className=" d-flex justify-content-between  content-a ">
+      <div className=" d-flex justify-content-between content-a ">
         <span>
           <h5 className=" h5-title">All </h5>
         </span>
@@ -50,7 +50,7 @@ const Content = () => {
           <h5 className=" h5-title">Natural</h5>
         </span>
       </div>
-      <section className=" px-3 py-2 mb-5 mt-5 d-flex gap-3">
+      <section className=" px-3 py-2 mb-5 mt-5 d-flex gap-3 bg-white rounded top-stories ">
         <aside style={{ width: "50%", height: "110vh" }}>
           <img
             src={biotechnology}
@@ -88,10 +88,10 @@ const Content = () => {
         </aside>
         <aside style={{ width: "30%", height: "110vh" }}>
           <div className="mt-3">
-            <h5 className="text-start text-light ms-3">
+            <h5 className="text-start text-black ms-3">
               Coffee Delights: A Brew-tiful Journey
             </h5>
-            <p className=" text-start text-light ms-3">
+            <p className=" text-start text-secondary ms-3">
               Dive into the world of coffee delights! From selecting beans to
               enjoying the perfect brew, this article explores the joy and
               flavor in every cup. Whether you prefer a bold espresso or a
@@ -100,8 +100,8 @@ const Content = () => {
             </p>
           </div>
           <div style={{ marginTop: "60px" }}>
-            <h5 className="text-start text-light ms-3">Pedal to Happiness</h5>
-            <p className=" text-start text-light ms-3">
+            <h5 className="text-start text-black ms-3">Pedal to Happiness</h5>
+            <p className=" text-start text-secondary ms-3">
               Bike riding brings pure joy and freedom. Feel the wind in your
               hair and enjoy the simple thrill of pedaling through scenic paths
               or city streets. Each ride is a chance to escape, unwind, and
@@ -109,10 +109,10 @@ const Content = () => {
             </p>
           </div>
           <div style={{ marginTop: "60px" }}>
-            <h5 className="text-start text-light ms-3">
+            <h5 className="text-start text-black ms-3">
               Understanding Climate Change
             </h5>
-            <p className=" text-start text-light ms-3">
+            <p className=" text-start text-secondary ms-3 ">
               Climate change affects us all, altering weather patterns and
               impacting ecosystems. This article explains the basics of climate
               change, its causes, and its effects on our planet. Learn how these

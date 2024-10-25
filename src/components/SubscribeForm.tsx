@@ -2,7 +2,7 @@ const SubscribeForm = () => {
   return (
     <>
       <div
-        className="form-floating mb-3  gap-1 d-flex ms-3"
+        className=" mb-3  gap-1 d-flex ms-3 "
         style={{ position: "relative" }}
       >
         <input
@@ -11,13 +11,12 @@ const SubscribeForm = () => {
           id="email"
           placeholder="Email"
           required
-          style={{ width: "360px", zIndex: "0" }}
+          style={{ width: "200px", zIndex: "0" }}
         />
-        <label htmlFor="floatingInput">Email</label>
         <button
           type="button"
           className="btn btn-warning btn-md"
-          style={{ width: "120px" }}
+          style={{ width: "100px" }}
         >
           Subscribe
         </button>

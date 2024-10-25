@@ -38,7 +38,7 @@ const Technology = () => {
             style={{ width: "300px" }}
           >
             <h5
-              className="mt-3"
+              className="mt-3  product-title "
               style={{ fontSize: "18px", marginBottom: "-10px" }}
             >
               {product.title}

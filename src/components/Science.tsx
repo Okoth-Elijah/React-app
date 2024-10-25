@@ -1,324 +1,78 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import SocialLinks from "./SocialLinks";
-import biotechnology from "../assets/images/biotechnology.jpeg";
-import space from "../assets/images/space.jpeg";
-import physics from "../assets/images/physics.jpeg";
-import neuroscience from "../assets/images/neuroscience.jpeg";
-import climate from "../assets/images/climate.jpeg";
-import genetics from "../assets/images/genetics.jpeg";
-import austrobiology from "../assets/images/austrobiology.jpeg";
-import quantom from "../assets/images/quantom.jpeg";
+// import biotechnology from "../assets/images/biotechnology.jpeg";
+// import space from "../assets/images/space.jpeg";
+// import physics from "../assets/images/physics.jpeg";
+// import neuroscience from "../assets/images/neuroscience.jpeg";
+// import climate from "../assets/images/climate.jpeg";
+// import genetics from "../assets/images/genetics.jpeg";
+// import austrobiology from "../assets/images/austrobiology.jpeg";
+// import quantom from "../assets/images/quantom.jpeg";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 const Science = () => {
+  const [products, setProducts] = useState([]);
+
+  const getAllProducts = () => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((res) => {
+        setProducts(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  useEffect(() => {
+    getAllProducts();
+  }, [products]);
+
   return (
     <section>
       <div
         className="row d-flex justify-content-center "
         style={{ marginTop: "90px", width: "100%", position: "relative" }}
       >
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Quantum Mysteries
-          </h5>
+        {products.map((product: any) => (
           <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
+            className=" my-3 border border-4 ms-4 justify-content-center bg-white"
+            style={{ width: "300px" }}
           >
-            <img
-              className="image-fluid im-s"
-              src={quantom}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
+            <h5
+              className="mt-3 text-center product-title "
+              style={{ fontSize: "18px", marginBottom: "-10px" }}
             >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white"
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Astrobiology
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={austrobiology}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
+              {product.title}
+            </h5>
+            <div
+              className=" justify-content-center my-3 py-3 ps-2"
+              style={{ position: "relative", width: "270px" }}
             >
-              Read More
-            </button>
-            <SocialLinks />
+              <img
+                className="image-fluid im-s"
+                src={product.image}
+                alt="technology-article"
+                style={{
+                  width: "250px",
+                  height: "350px",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                }}
+              />
+
+              <p className="product-description">{product.description}</p>
+              <button
+                type="button"
+                className="btn btn-primary rounded-1 mt-3 w-100 d-flex justify-content-center  "
+              >
+                Explore Now
+              </button>
+              <SocialLinks />
+            </div>
           </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Genetic Frontiers
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={genetics}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
-            >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white"
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Climate Science
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={climate}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
-            >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Neuroscience
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={neuroscience}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
-            >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Physics Unveiled
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={physics}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
-            >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white"
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Space Exploration
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={space}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
-            >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
-        <div
-          className=" my-3 border border-4 ms-4 justify-content-center bg-white "
-          style={{ width: "300px" }}
-        >
-          <h5
-            className="mt-3 text-center"
-            style={{ fontSize: "18px", marginBottom: "-10px" }}
-          >
-            Biotechnology
-          </h5>
-          <div
-            className=" justify-content-center my-3 py-3 ps-2"
-            style={{ position: "relative", width: "270px" }}
-          >
-            <img
-              className="image-fluid im-s"
-              src={biotechnology}
-              alt="technology-article"
-              style={{
-                width: "250px",
-                height: "350px",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-            <button
-              type="button"
-              className="btn btn-primary rounded-1 mt-3 "
-              style={{
-                display: "flex",
-                marginTop: "1px",
-              }}
-            >
-              Read More
-            </button>
-            <SocialLinks />
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

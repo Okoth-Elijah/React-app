@@ -1,5 +1,9 @@
 body {
-  background-color: rgb(66, 66, 66);
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(12, 100%, 48%, 1) 0%,
+    hsla(0, 2%, 46%, 1) 97%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,26 +14,10 @@ body {
 }
 
 /* Register start */
-div .register-container {
-  width: 430px;
+.registration-form {
+  border: 2px solid white;
+  width: 35em;
 }
-
-.register-container {
-  border: 2px solid rgb(204, 201, 201);
-  box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
-  height: 90vh;
-  border-radius: 3px;
-}
-
-.password-aline {
-  display: flex;
-  gap: 3px;
-}
-
-.image {
-  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.589);
-}
-
 /* Register end */
 
 /* Login start */
@@ -47,24 +35,77 @@ div .register-container {
   margin-top: 5px;
 }
 
-div .login-div {
+#login-div {
   box-shadow: 5px 5px 10px rgba(251, 255, 0, 0.541);
-  width: 400px;
-  position: relative;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   border-radius: 2px;
-  border: 2px solid lightGray;
+  margin-bottom: -10px;
+  background: url("https://i.pinimg.com/736x/85/c9/4b/85c94b65b5c4e1ae70c74a9179a2412d.jpg")
+    center no-repeat;
+  background-size: cover;
+  filter: contrast(80%);
+
+  .logo-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+  }
+}
+
+.lg-content {
+  box-shadow: 0 0 15px black;
+  height: 28em;
+  margin-top: -1em;
+  padding: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #login-div {
+    border: 2px solid rgb(216, 107, 18);
+    width: 100%;
+    margin-top: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #login-div {
+    width: 100%;
+    border: 2px solid green;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #login-div {
+    width: 100%;
+    border: 2px solid rgb(13, 0, 128);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #login-div {
+    width: 100%;
+    border: 2px solid rgb(100, 128, 0);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #login-div {
+    width: 100%;
+    border: 2px solid rgb(182, 0, 152);
+  }
 }
 
 .image {
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.589);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Login end */
@@ -89,14 +130,11 @@ div .login-div {
 /* navbar start */
 
 @media only screen and (max-width: 600px) {
-  .navbar-toggler {
-    background-color: rgba(236, 160, 18, 0.603);
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .nav-style {
     width: 100%;
+  }
+  .navbar-toggler {
+    background-color: rgba(236, 160, 18, 0.603);
   }
 }
 
@@ -172,7 +210,6 @@ div .login-div {
     width: 250px;
     margin-left: -10px;
     gap: 1px;
-    /* border: 2px solid green; */
   }
 
   .proflie {
@@ -218,7 +255,6 @@ div .login-div {
 
 /* top-content-start */
 .tech-2 {
-  /* border: 2px solid red; */
   object-fit: cover;
   object-position: center;
   width: 17em;
@@ -244,6 +280,7 @@ div .login-div {
   background-color: white;
   width: 100%;
   position: relative;
+  margin-top: -8px;
 }
 
 .buttons-links {
@@ -481,6 +518,37 @@ div .linksection span a:hover {
   background-color: rgb(255, 166, 0);
 }
 
+.form-floating input {
+  border: 3px solid coral;
+  background: transparent;
+  border-right: none;
+  border-start-end-radius: 0px;
+  border-end-end-radius: 0px;
+}
+
+.form-floating input::placeholder {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+
+  .form-floating {
+    background-color: #1877f2;
+    position: absolute;
+    width: 30%;
+  }
+}
+
 .num {
   background-color: rgb(66, 66, 66);
 }
@@ -491,7 +559,11 @@ div .linksection span a:hover {
 }
 
 .vvvv {
-  background-color: rgb(66, 66, 66);
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(12, 100%, 48%, 1) 0%,
+    hsla(0, 2%, 46%, 1) 97%
+  );
 }
 
 .contact-body {
@@ -506,6 +578,13 @@ div .linksection span a:hover {
 }
 
 /* footer end */
+
+@media (min-width: 601px) {
+  .top-stories {
+    overflow: hidden;
+    width: 100%;
+  }
+}
 
 /* contact us start */
 .card-2 {
@@ -605,33 +684,14 @@ div .linksection span a:hover {
 /* @media for the register form */
 
 /* home page responsivenes */
-.homepage {
-  width: 100%;
-}
 
 @media only screen and (width <= 600px) {
   .homepage {
-    width: 53.4%;
+    width: 100%;
     background-color: rgb(27, 44, 77);
   }
 }
 /* resposiveness ends */
-
-/* media for content section */
-@media (width <= 600px) {
-  .content-a {
-    width: 117%;
-    margin-left: -43px;
-    overflow: scroll;
-  }
-
-  .content-a span h5 {
-    font-size: small;
-    margin-top: 5px;
-  }
-}
-
-/* media for content section end*/
 
 /* trending-content-start */
 
@@ -661,6 +721,21 @@ div .linksection span a:hover {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-clamp: 3;
+}
+
+.product-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 2;
+  cursor: pointer;
+}
+
+.product-title:hover:active {
+  -webkit-line-clamp: 3;
+  line-clamp: 2;
 }
 
 /* read content start */
@@ -833,6 +908,10 @@ div .linksection span a:hover {
 }
 
 /* comments-part-end */
+
+/* footer start */
+
+/* footer end */
 
 /* profile-navbar start */
 .profile-navbar {

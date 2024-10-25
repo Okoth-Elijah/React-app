@@ -21,16 +21,16 @@ const Herosection = () => {
   });
 
   return (
-    <div className="d-flex flex-column hero-col ">
+    <div className="d-flex flex-column hero-col">
       <div
-        className="d-flex justify-content-center align-items-center gap-3 pt-3"
+        className="d-flex justify-content-center align-items-center gap-3 pt-3 "
         style={{ position: "inherit" }}
       >
         <h2 className="heading">{products.title}</h2>
         <img
           src={logo}
           alt=""
-          className="img-fluid img-1 border border-danger"
+          className="img-fluid img-1"
           style={{
             width: "70px",
             height: "70px",
